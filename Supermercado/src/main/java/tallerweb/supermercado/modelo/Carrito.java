@@ -1,5 +1,6 @@
 package tallerweb.supermercado.modelo;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class Carrito {
      * Elimina todos los productos del carrito.<br>
      */
     public void vaciar() {
-        // Implementar
+        this.productos.removeAll(productos);
     }
 
     /**
@@ -29,16 +30,16 @@ public class Carrito {
      * @param ingrediente
      */
     public void agregarProducto(Producto producto) {
-        // Implementar
+        this.productos.add(producto);
     }
 
     /**
-     * Permite agregar un descuento que será aplicado al carrito.<br>
+     * Permite agregar un descuento que sera aplicado al carrito.<br>
      * 
      * @param descuento
      */
     public void aplicarDescuento(Descuento descuento) {
-        // Implementar
+    	 this.descuentos.add(descuento);
     }
 
     /**
@@ -47,19 +48,11 @@ public class Carrito {
      * @return
      */
     public List<Producto> verProductos() {
-        // Implementar
-        return null;
-    }
-
-    /**
-     * Devuelve el precio total del carrito aplicando descuentos si los hubiese,
-     * primero aplica los descuentos de monto y luego los de porcentaje.<br>
-     * 
-     * @return
-     */
-    public Double total() {
-        // Implementar
-        return null;
+    	Iterator<Producto> iteratorProductos = productos.iterator();
+    	while(iteratorProductos.hasNext()){
+    	Producto cadaProducto = iteratorProductos.next();
+    	System.out.println(cadaProducto.getNombre() + cadaProducto.getPrecio());}
+        return null; //ver si retorna bien!
     }
 
     /**
@@ -68,9 +61,36 @@ public class Carrito {
      * @return
      */
     public Double totalSinDescuentos() {
-        // Implementar
-        return null;
+    	Double precioTotal=0.0;
+    	Iterator<Producto> iteratorPrecioTotal = productos.iterator();
+    	while(iteratorPrecioTotal.hasNext()){
+    	Producto producto = iteratorPrecioTotal.next();
+    	precioTotal=precioTotal+producto.getPrecio();
+    	}
+        return precioTotal;
     }
+    
+    /**
+     * Devuelve el precio total del carrito aplicando descuentos si los hubiese,
+     * primero aplica los descuentos de monto y luego los de porcentaje.<br>
+     * 
+     * @return
+     */
+    public Double total() {
+    	Double subTotal=totalSinDescuentos();
+    	Double porcentajeAcumulado=0.0;
+        Double montoAcumulado=0.0;
+        Double precioConDescuentos=0.0;
+        Iterator<Descuento> iteratorDescuentos = descuentos.iterator();
+    	while(iteratorDescuentos.hasNext()){
+    	Descuento descuento = iteratorDescuentos.next();
+    	porcentajeAcumulado=porcentajeAcumulado+descuento.getPorcentaje();
+    	montoAcumulado=montoAcumulado+descuento.getMonto();
+    	}
+    	subTotal=subTotal-montoAcumulado; //aplica el descuento de monto
+    	return precioConDescuentos=subTotal-(1-(porcentajeAcumulado/100)); //aplica el descuento de porcentaje
+    }
+
 
     /**
      * Devuelve el dinero ahorrado gracias a los descuentos.<br>
@@ -78,7 +98,9 @@ public class Carrito {
      * @return
      */
     public Double totalAhorros() {
-        // Implementar
-        return null;
+        Double dineroAhorrado=0.0;
+        Double precioSinDescuento=totalSinDescuentos();
+        Double precioConDescuento= total();
+        return dineroAhorrado=precioSinDescuento-precioConDescuento;
     }
 }
