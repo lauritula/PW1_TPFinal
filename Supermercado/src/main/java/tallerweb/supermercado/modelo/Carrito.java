@@ -10,9 +10,7 @@ public class Carrito {
     private List<Producto> productos = new LinkedList<Producto>();
     private List<Descuento> descuentos = new LinkedList<Descuento>();
 
-    private Carrito() {
-    }
-
+   
     public static Carrito getInstance() {
         return instance;
     }
@@ -20,8 +18,9 @@ public class Carrito {
     /**
      * Elimina todos los productos del carrito.<br>
      */
-    public void vaciar() {
+    public int vaciar() {
         this.productos.removeAll(productos);
+        return this.productos.size();
     }
 
     /**
@@ -31,6 +30,7 @@ public class Carrito {
      */
     public void agregarProducto(Producto producto) {
         this.productos.add(producto);
+
     }
 
     /**
