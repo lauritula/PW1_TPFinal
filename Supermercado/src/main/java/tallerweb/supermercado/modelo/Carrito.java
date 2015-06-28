@@ -16,18 +16,10 @@ public class Carrito {
     }
 
     /**
-     * Muestra la dimension del carrito.<br>
-     */
-    public int sizeCarrito() {
-       return this.productos.size();
-    }
-    
-    /**
      * Elimina todos los productos del carrito.<br>
      */
-    public int vaciar() {
+    public void vaciar() {
         this.productos.removeAll(productos);
-        return this.sizeCarrito();
     }
 
     /**
