@@ -21,10 +21,12 @@ public class ProductoTest {
     	Assert.assertFalse(5 == carrito.vaciar());
     }
 
-//    @Test
-//    public void testAgregarProducto() {
-//        // Implementar
-//    }
+    @Test
+    public void testAgregarProducto() {
+    	carrito.agregarProducto(new Producto());
+    	Assert.assertTrue(1== carrito.sizeCarrito());
+    	Assert.assertFalse(0 == carrito.sizeCarrito());
+    }
 //
 //    @Test
 //    public void testAplicarDescuento() {
