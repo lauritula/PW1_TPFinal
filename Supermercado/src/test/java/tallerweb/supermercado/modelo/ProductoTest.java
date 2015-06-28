@@ -1,5 +1,7 @@
 package tallerweb.supermercado.modelo;
 
+//Commit de prueba 
+
 import org.junit.Test;
 
 public class ProductoTest {
