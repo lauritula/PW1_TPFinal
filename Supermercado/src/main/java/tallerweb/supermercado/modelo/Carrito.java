@@ -15,11 +15,19 @@ public class Carrito {
         return instance;
     }
 
+    
+    /**
+     * Devuelve el tamaño del carrito<br>
+     */
+    public int obtenerSize(){
+    	return this.productos.size();
+    }
+    
+    
     /**
      * Elimina todos los productos del carrito.<br>
      */
-    
-    
+
     public void vaciar() {
         this.productos.removeAll(productos);
         
@@ -54,7 +62,7 @@ public class Carrito {
     	while(iteratorProductos.hasNext()){
     	Producto cadaProducto = iteratorProductos.next();
     	System.out.println(cadaProducto.getNombre() + cadaProducto.getPrecio());}
-        return null; //ver si retorna bien!
+        return this.productos;
     }
 
     /**

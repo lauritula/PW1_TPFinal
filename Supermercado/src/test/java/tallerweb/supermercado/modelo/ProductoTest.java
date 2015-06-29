@@ -18,17 +18,20 @@ public class ProductoTest {
 	
     @Test
     public void testVaciar() {
-    	
+    	Assert.assertTrue(0==carrito.obtenerSize());
+    	Assert.assertFalse(1==carrito.obtenerSize());
   
     }
 
 
-//	@Test
-//    public void testAgregarProducto() {
-//    	carrito.agregarProducto(new Producto());
-//    	//Assert.assertTrue(1== this.carrito.productos.size());
-//    }
-//
+	@Test
+    public void testAgregarProducto() {
+    	carrito.agregarProducto(new Producto());
+    	Assert.assertTrue(1== this.carrito.obtenerSize());
+    	Assert.assertFalse(0== this.carrito.obtenerSize());
+    }
+
+	
 //    @Test
 //    public void testAplicarDescuento() {
 //        // Implementar
@@ -36,7 +39,7 @@ public class ProductoTest {
 //
 //    @Test
 //    public void testVerProductos() {
-//        // Implementar
+//        
 //    }
 //
 //    @Test
