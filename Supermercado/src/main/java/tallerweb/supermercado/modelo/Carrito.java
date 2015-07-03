@@ -14,16 +14,7 @@ public class Carrito {
     public static Carrito getInstance() {
         return instance;
     }
-
-    
-    /**
-     * Devuelve el tamaño del carrito<br>
-     */
-    public int obtenerSize(){
-    	return this.productos.size();
-    }
-    
-    
+        
     /**
      * Elimina todos los productos del carrito.<br>
      */

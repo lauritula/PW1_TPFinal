@@ -3,6 +3,10 @@
 <title>Inicio</title>
 </head>
 <body>
-	Inicio
+	<h1>Supermercado</h1>
+
+
+	
+	
 </body>
 </html>

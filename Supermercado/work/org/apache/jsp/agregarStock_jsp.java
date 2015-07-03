@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class agregarStock_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -57,7 +57,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<body>\r\n");
       out.write("\t<h1>Supermercado</h1>\r\n");
       out.write("\r\n");
-      out.write("\t<p><a href=\"./WEB-INF/jsp/stock.jsp\">Visualizar Stock</a></p>\r\n");
+      out.write("\t<p><a href=\"stock.jsp\">Visualizar Stock</a></p>\r\n");
       out.write("\t<p><a href=\"alta.jsp\">Producto nuevo a Stock</a></p>\r\n");
       out.write("\t<p><a href=\"agregarStock.jsp\">Actualizar Stock</a></p>\r\n");
       out.write("\t<p><a href=\"eliminarProducto.jsp\">Eliminar producto de Stock</a></p>\r\n");
