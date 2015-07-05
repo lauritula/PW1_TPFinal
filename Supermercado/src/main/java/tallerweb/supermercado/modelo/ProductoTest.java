@@ -63,8 +63,16 @@ import org.junit.Test;
 
     @Test
     public void testTotal() {
+    	  Producto p3 = new Producto();
+	      carrito.agregarProducto(p3);
+	      Producto p4 = new Producto();
+	      carrito.agregarProducto(p4);
+	       p3.setPrecio(10.0);      
+	       p4.setPrecio(10.0);      
     	Descuento d1 = new Descuento();
         Descuento d2 = new Descuento();
+       
+        
         d1.setPorcentaje(5.00);
         d1.setMonto(0.00);
         d2.setPorcentaje(0.00);
