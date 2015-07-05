@@ -101,10 +101,10 @@ public class Carrito {
      * 
      * @return
      */
-    public Double totalAhorros() {
-        Double dineroAhorrado=0.0;
-        Double precioSinDescuento=totalSinDescuentos();
-        Double precioConDescuento= total();
+    public double totalAhorros() {
+        double dineroAhorrado=0.0;
+        double precioSinDescuento=totalSinDescuentos();
+        double precioConDescuento= total();
         return dineroAhorrado=precioSinDescuento-precioConDescuento;
     }
 }
