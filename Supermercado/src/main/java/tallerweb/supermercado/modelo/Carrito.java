@@ -30,6 +30,7 @@ public class Carrito {
      */
     public void agregarProducto(Producto producto) {
         this.productos.add(producto);
+        
     }
 
     /**
@@ -86,8 +87,8 @@ public class Carrito {
     	montoAcumulado=montoAcumulado+descuento.getMonto();
     	porcentajeAcumulado=porcentajeAcumulado+descuento.getPorcentaje();
     	}
-    	System.out.println(montoAcumulado);
-    	System.out.println(porcentajeAcumulado);
+    	System.out.println("Total: " + montoAcumulado);
+    	System.out.println("Total: " + porcentajeAcumulado);
     	subTotal=subTotal-montoAcumulado; //aplica el descuento de monto
     	precioConDescuentos=subTotal-(1-(porcentajeAcumulado/100)); //aplica el descuento de porcentaje
     	System.out.println(precioConDescuentos);
