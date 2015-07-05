@@ -35,6 +35,14 @@ import org.junit.Test;
 	
     @Test
     public void testAplicarDescuento() {
+    	Descuento d1 = new Descuento();
+        Descuento d2 = new Descuento();
+        d1.setPorcentaje(5.00);
+        d1.setMonto(0.00);
+        d2.setPorcentaje(0.00);
+        d2.setMonto(5.00);
+    	Double totalDesc = carrito.total();
+    	Assert.assertEquals(30.0, totalDesc, 1.0);
 
     }
 
@@ -62,7 +70,7 @@ import org.junit.Test;
         d2.setPorcentaje(0.00);
         d2.setMonto(5.00);
     	Double totalDesc = carrito.total();
-    	Assert.assertEquals(29.0, totalDesc, 0.0);
+    	Assert.assertEquals(30.0, totalDesc, 1.0);
     }
 
 
