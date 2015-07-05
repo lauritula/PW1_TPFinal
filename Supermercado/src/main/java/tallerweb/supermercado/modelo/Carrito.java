@@ -76,25 +76,25 @@ public class Carrito {
      * 
      * @return
      */
-    public Double total() {
-    	Double subTotal=totalSinDescuentos();
-    	Double porcentajeAcumulado=0.0;
-        Double montoAcumulado=0.0;
-        Double precioConDescuentos=0.0;
-        Iterator<Descuento> iteratorDescuentos = descuentos.iterator();
+    
+	double porcentajeAcumulado,montoAcumulado,precioConDescuentos;
+
+	public Double total() {
+    	double totalSinDescuentos=totalSinDescuentos();
+        Iterator<Descuento> iteratorDescuentos = this.descuentos.iterator();
     	while(iteratorDescuentos.hasNext()){
     	Descuento descuento = iteratorDescuentos.next();
-    	montoAcumulado=montoAcumulado+descuento.getMonto();
-    	porcentajeAcumulado=porcentajeAcumulado+descuento.getPorcentaje();
-    	}
-    	System.out.println("Total: " + montoAcumulado);
-    	System.out.println("Total: " + porcentajeAcumulado);
-    	subTotal=subTotal-montoAcumulado; //aplica el descuento de monto
-    	precioConDescuentos=subTotal-(1-(porcentajeAcumulado/100)); //aplica el descuento de porcentaje
-    	System.out.println(precioConDescuentos);
-    	return precioConDescuentos;
+    		double getMonto=descuento.getMonto();
+    		this.montoAcumulado=this.montoAcumulado+getMonto;
+    		double getPorcentaje=descuento.getPorcentaje();
+    		this.porcentajeAcumulado=this.porcentajeAcumulado+getPorcentaje;
+    	}	
+    	this.precioConDescuentos=totalSinDescuentos-this.montoAcumulado; //aplica el descuento de monto
+    	if(this.porcentajeAcumulado>0.0){
+    		this.precioConDescuentos=this.precioConDescuentos*(1-(this.porcentajeAcumulado/100));
+    		}//aplica el descuento de porcentaje
+    	return this.precioConDescuentos;
     }
-
 
     /**
      * Devuelve el dinero ahorrado gracias a los descuentos.<br>

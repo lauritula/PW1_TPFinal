@@ -7,8 +7,8 @@ package tallerweb.supermercado.modelo;
  */
 public class Descuento {
     
-    private Double porcentaje;
-    private Double monto;
+    private Double porcentaje=0.0;
+    private Double monto=0.0;
     
     public Double getPorcentaje() {
         return porcentaje;
@@ -17,11 +17,9 @@ public class Descuento {
         return monto;
     }
     public void setPorcentaje(Double porcentaje) {
-        this.monto = null;
         this.porcentaje = porcentaje;
     }
     public void setMonto(Double monto) {
-        this.porcentaje = null;
         this.monto = monto;
     }
     

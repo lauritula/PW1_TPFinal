@@ -36,14 +36,17 @@ import org.junit.Test;
 	
     @Test
     public void testAplicarDescuento() {
-//    	Descuento d1 = new Descuento();
-//        Descuento d2 = new Descuento();
-//        d1.setPorcentaje(5.00);
-//        d1.setMonto(0.00);
-//        d2.setPorcentaje(0.00);
-//        d2.setMonto(5.00);
-//    	Double totalDesc = carrito.total();
-//    	Assert.assertEquals(30.0, totalDesc, 1.0);
+
+    	Producto p3=new Producto();
+    	carrito.agregarProducto(p3);
+    	p3.setNombre("pan");
+    	p3.setPrecio(20.0);
+    	Descuento d5=new Descuento();
+    	carrito.aplicarDescuento(d5);
+    	d5.setMonto(7.0);
+    	d5.setPorcentaje(10.0);
+      	double totalDescuentoParcial = carrito.total();
+    	Assert.assertEquals(38.7, totalDescuentoParcial, 0.0);
 
     }
 
@@ -65,11 +68,13 @@ import org.junit.Test;
     @Test
     public void testTotal() {
     	Descuento d1 = new Descuento();
+    	carrito.aplicarDescuento(d1);
         Descuento d2 = new Descuento();
+        carrito.aplicarDescuento(d2);
         d1.setPorcentaje(5.00);
         d2.setMonto(5.00);
-    	Double totalDesc = carrito.total();
-    	Assert.assertEquals(30.0, totalDesc, 1.0);
+       	double totalDesc = carrito.total();
+    	Assert.assertEquals(23.75, totalDesc, 0.0);
     }
 
 
