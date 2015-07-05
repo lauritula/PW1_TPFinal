@@ -60,7 +60,7 @@ public class Carrito {
      * @return
      */
     public Double totalSinDescuentos() {
-    	Double precioTotal=0.0;
+    	double precioTotal=0.0;
     	Iterator<Producto> iteratorPrecioTotal = productos.iterator();
     	while(iteratorPrecioTotal.hasNext()){
     	Producto producto = iteratorPrecioTotal.next();

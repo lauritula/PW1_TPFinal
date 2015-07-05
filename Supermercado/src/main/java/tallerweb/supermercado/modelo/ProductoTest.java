@@ -16,15 +16,7 @@ import org.junit.Test;
 	        carrito.agregarProducto(p2);
 	        p2.setPrecio(20.00);
 	        p1.setPrecio(10.00);
-	        //carga ficticia de descuentos
-	        Descuento d1 = new Descuento();
-	        carrito.aplicarDescuento(d1);
-	        Descuento d2 = new Descuento();
-	        carrito.aplicarDescuento(d2);
-	        d1.setPorcentaje(5.00);
-	        d1.setMonto(0.00);
-	        d2.setPorcentaje(0.00);
-	        d2.setMonto(5.00);
+
 	    }
 	
     @Test
@@ -64,8 +56,14 @@ import org.junit.Test;
     @Test
     public void testTotal() {
     	//carga ficticia realizada en  @before 
-    	double totalDesc = carrito.total();
-    	Assert.assertEquals(23.50, totalDesc, 0.0);
+    	Descuento d1 = new Descuento();
+        Descuento d2 = new Descuento();
+        d1.setPorcentaje(5.00);
+        d1.setMonto(0.00);
+        d2.setPorcentaje(0.00);
+        d2.setMonto(5.00);
+    	Double totalDesc = carrito.total();
+    	Assert.assertEquals(29.0, totalDesc, 0.0);
     }
 
 
