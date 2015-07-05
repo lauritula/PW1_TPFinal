@@ -35,7 +35,7 @@ import org.junit.Test;
 	
     @Test
     public void testAplicarDescuento() {
-    	//carga ficticia realizada en  @before    	
+
     }
 
     @Test
@@ -55,7 +55,6 @@ import org.junit.Test;
 
     @Test
     public void testTotal() {
-    	//carga ficticia realizada en  @before 
     	Descuento d1 = new Descuento();
         Descuento d2 = new Descuento();
         d1.setPorcentaje(5.00);
