@@ -18,7 +18,6 @@ public class Carrito {
     /**
      * Elimina todos los productos del carrito.<br>
      */
-
     public void vaciar() {
         this.productos.removeAll(productos);
         
@@ -31,7 +30,6 @@ public class Carrito {
      */
     public void agregarProducto(Producto producto) {
         this.productos.add(producto);
-
     }
 
     /**
@@ -51,8 +49,8 @@ public class Carrito {
     public List<Producto> verProductos() {
     	Iterator<Producto> iteratorProductos = productos.iterator();
     	while(iteratorProductos.hasNext()){
-    	Producto cadaProducto = iteratorProductos.next();
-    	System.out.println(cadaProducto.getNombre() + cadaProducto.getPrecio());}
+    	Producto cadaProducto = iteratorProductos.next();}
+    	//System.out.println(cadaProducto.getNombre() + cadaProducto.getPrecio());}
         return this.productos;
     }
 
@@ -85,11 +83,13 @@ public class Carrito {
         Iterator<Descuento> iteratorDescuentos = descuentos.iterator();
     	while(iteratorDescuentos.hasNext()){
     	Descuento descuento = iteratorDescuentos.next();
-    	porcentajeAcumulado=porcentajeAcumulado+descuento.getPorcentaje();
     	montoAcumulado=montoAcumulado+descuento.getMonto();
+    	porcentajeAcumulado=porcentajeAcumulado+descuento.getPorcentaje();
     	}
     	subTotal=subTotal-montoAcumulado; //aplica el descuento de monto
-    	return precioConDescuentos=subTotal-(1-(porcentajeAcumulado/100)); //aplica el descuento de porcentaje
+    	precioConDescuentos=subTotal-(1-(porcentajeAcumulado/100)); //aplica el descuento de porcentaje
+    	System.out.println(precioConDescuentos);
+    	return precioConDescuentos;
     }
 
 
