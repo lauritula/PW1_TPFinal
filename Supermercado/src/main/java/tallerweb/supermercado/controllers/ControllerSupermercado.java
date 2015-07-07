@@ -1,5 +1,4 @@
 package tallerweb.supermercado.controllers;
-
 import java.util.Map;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,7 +43,7 @@ public class ControllerSupermercado {
 		productosEnStock.agregarStock(fideos, 30);
 		
 		ModelAndView agregarStock = new ModelAndView("index");
-		agregarStock.addObject(agregarStock); //NOSE SI ESTO ES ASI, PERO AL MENOS NO TIRA ERROR. ES UNA DE LAS SUGERENCIAS QUE ME OFRECE AL PONER "."
+		agregarStock.addObject(productosEnStock); //NOSE SI ESTO ES ASI, PERO AL MENOS NO TIRA ERROR. ES UNA DE LAS SUGERENCIAS QUE ME OFRECE AL PONER "."
 		agregarStock.setViewName("listaProductosEnStock");
 		return agregarStock;
 				
