@@ -44,7 +44,7 @@ public class ControllerSupermercado {
 		
 		ModelAndView agregarStock = new ModelAndView("index");
 		agregarStock.addObject(productosEnStock); //NOSE SI ESTO ES ASI, PERO AL MENOS NO TIRA ERROR. ES UNA DE LAS SUGERENCIAS QUE ME OFRECE AL PONER "."
-		agregarStock.setViewName("listaProductosEnStock");
+		agregarStock.setViewName("agregarStock");
 		return agregarStock;
 				
 	}
