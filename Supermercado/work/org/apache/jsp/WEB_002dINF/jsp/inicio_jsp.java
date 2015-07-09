@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.WEB_002dINF.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class agregarStock_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class inicio_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -40,7 +40,7 @@ public final class agregarStock_jsp extends org.apache.jasper.runtime.HttpJspBas
 
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html; charset=ISO-8859-1");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -50,20 +50,15 @@ public final class agregarStock_jsp extends org.apache.jasper.runtime.HttpJspBas
       out = pageContext.getOut();
       _jspx_out = out;
 
+      out.write("\r\n");
+      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
-      out.write("<title>Inicio</title>\r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\r\n");
+      out.write("<title>Supermercado</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("\t<h1>Supermercado</h1>\r\n");
-      out.write("\r\n");
-      out.write("\t<p><a href=\"stock.jsp\">Visualizar Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"alta.jsp\">Producto nuevo a Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"agregarStock.jsp\">Actualizar Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"eliminarProducto.jsp\">Eliminar producto de Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"carrito.jsp\">Visualizar carrito</a></p>\r\n");
-      out.write("\t\r\n");
-      out.write("\t\r\n");
+      out.write("\t<a href=\"altaProducto\"> Dar de Alta un Producto </a>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

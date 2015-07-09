@@ -57,11 +57,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<body>\r\n");
       out.write("\t<h1>Supermercado</h1>\r\n");
       out.write("\r\n");
-      out.write("\t<p><a href=\"./WEB-INF/jsp/stock.jsp\">Visualizar Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"alta.jsp\">Producto nuevo a Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"agregarStock.jsp\">Actualizar Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"eliminarProducto.jsp\">Eliminar producto de Stock</a></p>\r\n");
-      out.write("\t<p><a href=\"carrito.jsp\">Visualizar carrito</a></p>\r\n");
+      out.write("\r\n");
+      if (true) {
+        _jspx_page_context.forward("/WEB-INF/jsp/inicio.jsp");
+        return;
+      }
+      out.write("\r\n");
       out.write("\t\r\n");
       out.write("\t\r\n");
       out.write("</body>\r\n");

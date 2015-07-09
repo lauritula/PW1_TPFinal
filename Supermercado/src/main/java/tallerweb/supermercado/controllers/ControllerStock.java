@@ -9,11 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ControllerStock {
 	
-//	INDEX (vista: agregarStock.jsp)
-	//@RequestMapping(value="/agregarStock", method = RequestMethod.GET)
-	
+//	@RequestMapping(value="/agregarStock", method = RequestMethod.POST)
+//	public ModelAndView index(){
+//		
+//		
+//	}
 
-
- 
-	
-}
+	}
