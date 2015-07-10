@@ -7,6 +7,11 @@
 <title>Supermercado</title>
 </head>
 <body>
-	<a href="altaProducto"> Dar de Alta un Producto </a>
+	<h1>Inicio Supermercado</h1>
+	<p><a href="verStock"> Ver Stock</a></p>
+	<p><a href="altaProducto"> Dar de Alta un Producto </a></p>
+	<p><a href="agregarStock"> Agregar Stock </a></p>
+	<p><a href="eliminarStock"> Eliminar Stock </a></p>
+	<p><a href="verCarrito"> Ir a Carrito </a></p>
 </body>
 </html>

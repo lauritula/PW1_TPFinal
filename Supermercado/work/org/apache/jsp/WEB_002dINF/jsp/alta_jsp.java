@@ -68,6 +68,7 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Dar de Alta un Producto</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
+      out.write("\t<h1>Dar de alta un Producto</h1>\r\n");
       out.write("\t");
       if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
         return;
@@ -95,11 +96,11 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/alta.jsp(16,1) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/alta.jsp(17,1) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setModelAttribute("producto");
-    // /WEB-INF/jsp/alta.jsp(16,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/alta.jsp(17,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("altaSubmit");
-    // /WEB-INF/jsp/alta.jsp(16,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/alta.jsp(17,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("POST");
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {

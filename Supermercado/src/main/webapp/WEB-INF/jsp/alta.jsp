@@ -13,6 +13,7 @@
 <title>Dar de Alta un Producto</title>
 </head>
 <body>
+	<h1>Dar de alta un Producto</h1>
 	<form:form modelAttribute="producto" action="altaSubmit" method="POST">
 		<label path="nombre"> Nombre <label>
 		<input type="text" name="nombre" id="nombre"/>

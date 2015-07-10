@@ -58,7 +58,12 @@ public final class inicio_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Supermercado</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("\t<a href=\"altaProducto\"> Dar de Alta un Producto </a>\r\n");
+      out.write("\t<h1>Inicio Supermercado</h1>\r\n");
+      out.write("\t<p><a href=\"verStock\"> Ver Stock</a></p>\r\n");
+      out.write("\t<p><a href=\"altaProducto\"> Dar de Alta un Producto </a></p>\r\n");
+      out.write("\t<p><a href=\"agregarStock\"> Agregar Stock </a></p>\r\n");
+      out.write("\t<p><a href=\"eliminarStock\"> Eliminar Stock </a></p>\r\n");
+      out.write("\t<p><a href=\"verCarrito\"> Ir a Carrito </a></p>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
