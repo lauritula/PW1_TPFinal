@@ -14,9 +14,9 @@
 <body>
 	<h1>Producto dado de alta</h1> 
 	<!-- no esta mostrando variables -->
-	Nombre: <c:out value="${stockSupermercado.producto.nombre}"/>
+	Nombre: <c:out value="${producto.nombre}"/>
 	<br/><br/>
-	Precio: <c:out value="${stockSupermercado.producto.precio}"/>
+	Precio: <c:out value="${producto.precio}"/>
 	<br/><br/>
 	<a href="irIndex"> Volver al Inicio </a>
 </body>
