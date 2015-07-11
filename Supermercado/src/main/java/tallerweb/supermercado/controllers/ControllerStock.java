@@ -39,7 +39,7 @@ public class ControllerStock {
 		producto.setPrecio(precio);
 		
 		stockSupermercado.agregarProducto(producto);
-		stockSupermercado.agregarStock(producto,0);
+		//stockSupermercado.agregarStock(producto,0);
 		return new ModelAndView("altaSubmit");
 	}
 	
@@ -60,7 +60,11 @@ public class ControllerStock {
 	}
 	
 	@RequestMapping(value = "/agregar", method = RequestMethod.POST )
-	public ModelAndView submit(){
+	public ModelAndView submit(@RequestParam("nombre") String nombre, 
+						@RequestParam("cantidad") Integer cantidad){
+		
+		Producto miProducto = new Producto();
+		stockSupermercado.agregarStock(miProducto, cantidad);
 		return new ModelAndView("agregarSubmit");
 	}
 	
