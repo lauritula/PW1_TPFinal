@@ -7,7 +7,7 @@
 <title>Inicio</title>
 </head>
 <body>
-	<h2>Listado Stock de Ingredientes </h2>
+	<h2>Listado de Stock</h2>
 	
 	<table border=1 width=400>
 		<tr>

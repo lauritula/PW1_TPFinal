@@ -23,5 +23,7 @@
 		</br></br>
 		<input type="submit" value="Alta"/>
 	</form:form>
+	<br></br>
+	<div><a href="irIndex"> Volver al Inicio </a></div>
 </body>
 </html>
