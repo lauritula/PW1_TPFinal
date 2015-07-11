@@ -12,7 +12,7 @@
 <title>Alta de producto</title>
 </head>
 <body>
-	<h1>Producto dado de alta</h1> 
+	<h1>Stock de Producto Actualizado</h1> 
 	<br></br>
 	<div> <a href="verStock"> Ver Stock </a> </div>
 	<div> <a href="irIndex"> Volver al Inicio </a> </div>
