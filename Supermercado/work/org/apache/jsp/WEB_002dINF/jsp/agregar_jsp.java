@@ -105,7 +105,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\r\n");
           out.write("\t<h2> Agregar Stock: </h2>\r\n");
           out.write("\t\t</br>\t\t\r\n");
-          out.write("\t\t<label name=\"nombre\">Ingrediente: </label>\r\n");
+          out.write("\t\t<label name=\"nombre\">Producto: </label>\r\n");
           out.write("\t\t<select name=\"nombre\" id=\"nombre\">\r\n");
           out.write("\t\t    <option>- Seleccione Producto -</option>\r\n");
           out.write("\t\t    ");
