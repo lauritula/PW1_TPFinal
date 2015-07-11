@@ -34,6 +34,7 @@ public class ControllerSupermercado {
 		producto.setPrecio(precio);
 		
 		stockSupermercado.agregarProducto(producto);
+		stockSupermercado.agregarStock(producto, 0);
 		return new ModelAndView("altaSubmit");
 	}
 
