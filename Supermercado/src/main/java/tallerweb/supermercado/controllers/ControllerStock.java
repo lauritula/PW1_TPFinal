@@ -1,6 +1,7 @@
 package tallerweb.supermercado.controllers;
 
 import java.util.Map;
+import java.util.Set;
 
 import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.ModelAndView;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import tallerweb.supermercado.modelo.Producto;
 import tallerweb.supermercado.modelo.Stock;
 
@@ -35,6 +35,29 @@ public class ControllerStock {
 	
 	@RequestMapping(value = "/agregar", method = RequestMethod.POST )
 	public ModelAndView submit(){
+		return new ModelAndView("agregarSubmit");
+	}
+	
+	@ModelAttribute("productList")
+	public  Set<Producto> productosDisponibles(){
+		return stockSupermercado.listarProductosDisponibles();
+	}
+	
+	@RequestMapping(value = "/agregarSubmit", method = RequestMethod.POST )
+	public ModelAndView agregar(@RequestParam("nombre") String nombre, 
+						@RequestParam("cantidad") Integer cantidad){
+		
+		Producto miProducto = new Producto();
+		Set<Producto> productoLista = stockSupermercado.listarProductosDisponibles();
+		
+		for(Producto producto: productoLista){
+			if(producto.getNombre() == nombre){
+				miProducto = producto;
+	        }
+		}
+		
+		stockSupermercado.agregarStock(miProducto, cantidad);
+		
 		return new ModelAndView("agregarSubmit");
 	}
 	
