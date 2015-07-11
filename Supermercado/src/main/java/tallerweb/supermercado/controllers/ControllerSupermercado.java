@@ -37,7 +37,17 @@ public class ControllerSupermercado {
 		stockSupermercado.agregarStock(producto, 0);
 		return new ModelAndView("altaSubmit");
 	}
-
+	
+	
+	
+//	@ModelAttribute("tipoList")
+//	public TipoIngrediente[] devuelveTipoIngrediente(){
+//		return TipoIngrediente.values();
+//	}
+	
+	
+	
+	
 	
 	@RequestMapping("irIndex")
 	public ModelAndView volverIndex(){

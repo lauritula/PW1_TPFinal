@@ -16,7 +16,7 @@
 	<!-- no esta mostrando variables -->
 	Nombre: <c:out value="${producto.nombre}"/>
 	<br/><br/>
-	Precio: <c:out value="${producto.precio}"/>
+	Precio: <c:out value="${ingrediente.precio}"/>
 	<br/><br/>
 	<a href="irIndex"> Volver al Inicio </a>
 </body>
