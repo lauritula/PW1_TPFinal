@@ -16,5 +16,6 @@
 	<br></br>
 	<div> <a href="verStock"> Ver Stock </a> </div>
 	<div> <a href="irIndex"> Volver al Inicio </a> </div>
+	<div> <a href="altaProducto"> Agregar otro producto </a> </div>
 </body>
 </html>
