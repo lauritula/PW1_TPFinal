@@ -39,7 +39,7 @@ public class ControllerStock {
 		producto.setPrecio(precio);
 		
 		stockSupermercado.agregarProducto(producto);
-		stockSupermercado.agregarStock(producto,0);
+		///stockSupermercado.agregarStock(producto,0); REVISAR (ya lo hace abajo cuando agrega el stock
 		return new ModelAndView("altaSubmit");
 	}
 	
@@ -61,6 +61,7 @@ public class ControllerStock {
 	
 	@RequestMapping(value = "/agregar", method = RequestMethod.POST )
 	public ModelAndView submit(){
+		
 		return new ModelAndView("agregarSubmit");
 	}
 	
