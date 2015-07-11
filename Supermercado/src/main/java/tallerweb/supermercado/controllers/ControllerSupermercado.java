@@ -14,40 +14,7 @@ import tallerweb.supermercado.modelo.Stock;
 public class ControllerSupermercado {
 	private Stock stockSupermercado = Stock.getInstance();
 
-	@RequestMapping("altaProducto")
-	public ModelAndView altaProducto(){
-		return new ModelAndView("alta", "comand",  new Producto());
-	}
-	
-	@RequestMapping(value = "/alta", method = RequestMethod.POST )
-	public ModelAndView mostrarModelo(){
-		return new ModelAndView("altaSubmit");
-	}
-	
-	@RequestMapping(value = "/altaSubmit", method = RequestMethod.POST )
-	public ModelAndView agregar(@RequestParam("nombre") String nombre, 
-						@RequestParam("precio") Double precio, 
-						ModelMap model){
-		
-		Producto producto = new Producto();
-		producto.setNombre(nombre);
-		producto.setPrecio(precio);
-		
-		stockSupermercado.agregarProducto(producto);
-		stockSupermercado.agregarStock(producto, 0);
-		return new ModelAndView("altaSubmit");
-	}
-	
-	
-	
-//	@ModelAttribute("tipoList")
-//	public TipoIngrediente[] devuelveTipoIngrediente(){
-//		return TipoIngrediente.values();
-//	}
-	
-	
-	
-	
+
 	
 	@RequestMapping("irIndex")
 	public ModelAndView volverIndex(){

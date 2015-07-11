@@ -5,8 +5,8 @@
 <title>Inicio</title>
 </head>
 <body>
-	<form:form action="agregarSubmit" method="POST">
-	<h2> Agregar Stock: </h2>
+	<form:form action="eliminarSubmit" method="POST">
+	<h2> Eliminar Stock: </h2>
 		</br>		
 		<label name="nombre">Producto: </label>
 		<select name="nombre" id="nombre">
@@ -16,11 +16,7 @@
 			</c:forEach>
 		</select>
 		</br></br>		
-		<label name="cantidad">Cantidad: </label>
-		<input type="text" name="cantidad" id="cantidad" size="5">
-		</br></br>
-
-		<input type="submit" value="Actualizar Stock"/>
+		<input type="submit" value="Eliminar Stock"/>
 	</form:form>
 	</br></br>
 	<a href="irIndex"> Volver al Menu Principal </a>

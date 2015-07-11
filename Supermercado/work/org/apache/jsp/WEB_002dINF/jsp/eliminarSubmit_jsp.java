@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class altaSubmit_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class eliminarSubmit_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -63,11 +63,10 @@ public final class altaSubmit_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Alta de producto</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("\t<h1>Producto dado de alta</h1> \r\n");
+      out.write("\t<h1>Stock de Producto Eliminado</h1> \r\n");
       out.write("\t<br></br>\r\n");
       out.write("\t<div> <a href=\"verStock\"> Ver Stock </a> </div>\r\n");
       out.write("\t<div> <a href=\"irIndex\"> Volver al Inicio </a> </div>\r\n");
-      out.write("\t<div> <a href=\"altaProducto\"> Agregar otro producto </a> </div>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
