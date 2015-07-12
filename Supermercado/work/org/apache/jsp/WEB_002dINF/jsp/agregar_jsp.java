@@ -116,9 +116,6 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t</br></br>\t\t\r\n");
           out.write("\t\t<label name=\"cantidad\">Cantidad: </label>\r\n");
           out.write("\t\t<input type=\"text\" name=\"cantidad\" id=\"cantidad\" size=\"5\">\r\n");
-          out.write("\t\t<input type=\"hidden\" name=\"precio\" id=\"precio\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${productL.precio}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("\">\r\n");
           out.write("\t\t</br></br>\r\n");
           out.write("\r\n");
           out.write("\t\t<input type=\"submit\" value=\"Actualizar Stock\"/>\r\n");
@@ -165,7 +162,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write('"');
           out.write('>');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${productL.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</option>\r\n");
+          out.write(" </option>\r\n");
           out.write("\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

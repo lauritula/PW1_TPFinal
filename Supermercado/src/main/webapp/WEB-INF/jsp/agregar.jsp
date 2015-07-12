@@ -12,13 +12,12 @@
 		<select name="nombre" id="nombre">
 		    <option>- Seleccione Producto -</option>
 		    <c:forEach items="${productList}" var="productL">
-				<option value="${productL.nombre}">${productL.nombre}</option>
+				<option value="${productL.nombre}">${productL.nombre} </option>
 			</c:forEach>
 		</select>
 		</br></br>		
 		<label name="cantidad">Cantidad: </label>
 		<input type="text" name="cantidad" id="cantidad" size="5">
-		<input type="hidden" name="precio" id="precio" value="${productL.precio}">
 		</br></br>
 
 		<input type="submit" value="Actualizar Stock"/>

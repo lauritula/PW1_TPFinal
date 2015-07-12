@@ -71,19 +71,9 @@ public class ControllerStock {
 	
 	@RequestMapping(value = "/agregarSubmit", method = RequestMethod.POST )
 	public ModelAndView agregarStock(@RequestParam("nombre") String nombre, 
-						@RequestParam("cantidad") Integer cantidad,
-						@RequestParam("precio") Double precio){
-		
+						@RequestParam("cantidad") Integer cantidad){
 		Producto productoAAgregar = new Producto();
 		productoAAgregar.setNombre(nombre);
-		productoAAgregar.setPrecio(precio);
-		
-//		Set<Producto> listaDeProductos = stockSupermercado.listarProductosDisponibles();		
-//		for(Producto producto: listaDeProductos){
-//			if(producto.getNombre() == nombre){
-//				productoAAgregar = producto;
-//	        }
-//		}
 		stockSupermercado.agregarStock(productoAAgregar, cantidad);
 		return new ModelAndView("agregarSubmit");
 	}
@@ -101,13 +91,7 @@ public class ControllerStock {
 	@RequestMapping(value="/eliminarSubmit", method = RequestMethod.POST)
 	public ModelAndView eliminarSubmit(@RequestParam ("nombre") String nombre){
 		Producto productoAEliminarStock = new Producto();
-		Set<Producto> eliminarStock = stockSupermercado.listarProductosDisponibles();
-		
-		for (Producto producto: eliminarStock){
-			if(producto.getNombre()== nombre){
-				productoAEliminarStock = producto;
-			}
-		}
+		productoAEliminarStock.setNombre(nombre);
 		stockSupermercado.eliminarProducto(productoAEliminarStock);
 		return new ModelAndView("eliminarSubmit");
 	}

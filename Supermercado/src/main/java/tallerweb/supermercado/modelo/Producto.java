@@ -2,12 +2,11 @@ package tallerweb.supermercado.modelo;
 
 public class Producto {
 
-    @Override
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
-		result = prime * result + ((precio == null) ? 0 : precio.hashCode());
 		return result;
 	}
 	@Override
@@ -23,11 +22,6 @@ public class Producto {
 			if (other.nombre != null)
 				return false;
 		} else if (!nombre.equals(other.nombre))
-			return false;
-		if (precio == null) {
-			if (other.precio != null)
-				return false;
-		} else if (!precio.equals(other.precio))
 			return false;
 		return true;
 	}
