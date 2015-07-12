@@ -78,10 +78,10 @@ public class ControllerStock {
 		miProducto.setNombre(nombre);
 		
 //Set<Producto> productoLista = stockSupermercado.listarProductosDisponibles();		
-////		for(Producto producto: productoLista){
-////			if(producto.getNombre() == nombre){
-////				miProducto = producto;
-////	        }
+//		for(Producto producto: productoLista){
+//			if(producto.getNombre() == nombre){
+//				miProducto = producto;
+//	        }
 //		}
 		stockSupermercado.agregarStock(miProducto, cantidad);
 		return new ModelAndView("agregarSubmit");
