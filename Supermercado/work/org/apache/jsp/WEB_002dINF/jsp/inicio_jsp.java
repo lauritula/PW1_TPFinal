@@ -71,12 +71,12 @@ public final class inicio_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(" <div class=\"col-md-12\" style=\"height:300px\">\r\n");
       out.write(" <div class=\"col-md-2\"></div>\r\n");
       out.write(" <div class=\"col-md-8\">\r\n");
-      out.write(" <p>\r\n");
-      out.write(" <a href=\"verStock\" class=\"btn btn-primary btn-lg btn-block\"> <span class=\"glyphicon glyphicon-th-list\" aria-hidden=\"true\"></span> Ver Stock</a>\r\n");
-      out.write(" <a href=\"altaProducto\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Dar de Alta un Producto</a>\r\n");
-      out.write(" <a href=\"agregarStock\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-plus-sign\" aria-hidden=\"true\"></span> Añadir Stock</a>\r\n");
-      out.write(" <a href=\"eliminarStock\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-remove-sign\" aria-hidden=\"true\"></span> Eliminar Stock</a>\r\n");
-      out.write(" <a href=\"verCarrito\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span> Ver Carrito</a>\r\n");
+      out.write(" \t<p>\r\n");
+      out.write("\t <a href=\"verStock\" class=\"btn btn-primary btn-lg btn-block\"> <span class=\"glyphicon glyphicon-th-list\" aria-hidden=\"true\"></span> Ver Stock</a>\r\n");
+      out.write("\t <a href=\"altaProducto\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Dar de Alta un Producto</a>\r\n");
+      out.write("\t <a href=\"agregarStock\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-plus-sign\" aria-hidden=\"true\"></span> Agregar Stock</a>\r\n");
+      out.write("\t <a href=\"eliminarStock\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-remove-sign\" aria-hidden=\"true\"></span> Eliminar Stock</a>\r\n");
+      out.write("\t <a href=\"verCarrito\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span> Ver Carrito</a>\r\n");
       out.write(" </p>\r\n");
       out.write("</div>\r\n");
       out.write(" <div class=\"col-md-2\"></div>\r\n");

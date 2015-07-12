@@ -20,12 +20,12 @@
  <div class="col-md-12" style="height:300px">
  <div class="col-md-2"></div>
  <div class="col-md-8">
- <p>
- <a href="verStock" class="btn btn-primary btn-lg btn-block"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Ver Stock</a>
- <a href="altaProducto" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Dar de Alta un Producto</a>
- <a href="agregarStock" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Añadir Stock</a>
- <a href="eliminarStock" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Eliminar Stock</a>
- <a href="verCarrito" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ver Carrito</a>
+ 	<p>
+	 <a href="verStock" class="btn btn-primary btn-lg btn-block"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Ver Stock</a>
+	 <a href="altaProducto" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Dar de Alta un Producto</a>
+	 <a href="agregarStock" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Agregar Stock</a>
+	 <a href="eliminarStock" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Eliminar Stock</a>
+	 <a href="verCarrito" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ver Carrito</a>
  </p>
 </div>
  <div class="col-md-2"></div>
