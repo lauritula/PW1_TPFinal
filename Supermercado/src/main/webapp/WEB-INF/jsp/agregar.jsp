@@ -18,6 +18,7 @@
 		</br></br>		
 		<label name="cantidad">Cantidad: </label>
 		<input type="text" name="cantidad" id="cantidad" size="5">
+		<input type="hidden" name="precio" id="precio" value="${productL.precio}">
 		</br></br>
 
 		<input type="submit" value="Actualizar Stock"/>
