@@ -75,13 +75,14 @@ public class ControllerStock {
 						@RequestParam("cantidad") Integer cantidad){
 		
 		Producto miProducto = new Producto();
-		Set<Producto> productoLista = stockSupermercado.listarProductosDisponibles();
+		miProducto.setNombre(nombre);
 		
-		for(Producto producto: productoLista){
-			if(producto.getNombre() == nombre){
-				miProducto = producto;
-	        }
-		}
+//Set<Producto> productoLista = stockSupermercado.listarProductosDisponibles();		
+////		for(Producto producto: productoLista){
+////			if(producto.getNombre() == nombre){
+////				miProducto = producto;
+////	        }
+//		}
 		stockSupermercado.agregarStock(miProducto, cantidad);
 		return new ModelAndView("agregarSubmit");
 	}
