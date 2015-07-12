@@ -71,7 +71,7 @@ public class ControllerStock {
 	}
 	
 	@RequestMapping(value = "/agregarSubmit", method = RequestMethod.POST )
-	public ModelAndView agregar(@RequestParam("nombre") String nombre, 
+	public ModelAndView agregarStock(@RequestParam("nombre") String nombre, 
 						@RequestParam("cantidad") Integer cantidad){
 		
 		Producto miProducto = new Producto();
