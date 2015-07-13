@@ -13,19 +13,21 @@ import tallerweb.supermercado.modelo.Stock;
 @Controller
 public class ControllerSupermercado {
 	private Stock stockSupermercado = Stock.getInstance();
-
-@RequestMapping("verCarrito")
-public ModelAndView carrito(){
-	return new ModelAndView("carrito");
-}
-
-@RequestMapping(value="/carrito", method = RequestMethod.POST)
-public ModelAndView verCarrito(){
-	return new ModelAndView("carrito");
-}
 	
 	@RequestMapping("irIndex")
 	public ModelAndView volverIndex(){
 		return new ModelAndView("inicio");
 	}
+
+	@RequestMapping("verCarrito")
+	public ModelAndView carrito(){
+		return new ModelAndView("carrito");
+	}
+
+	@RequestMapping(value="/carrito", method = RequestMethod.POST)
+	public ModelAndView verCarrito(){
+		return new ModelAndView("carrito");
+	}
+	
+	
 }

@@ -56,12 +56,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\t<h1>Carrito</h1>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("\t<div> <a href=\"verStock\"> Ver Stock </a> </div>\r\n");
-      out.write("\t<div> <a href=\"irIndex\"> Volver al Inicio </a> </div>\r\n");
-      out.write("\t\r\n");
+      out.write("\t<div> <a href=\"irIndex\"> Volver al Inicio </a> </div>\t\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
