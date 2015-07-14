@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -50,9 +54,50 @@
 			</h1>
 		</div>
 		<div class="col-md-12" style="height: 300px">
-			<div class="col-md-2"></div>
-			<div class="col-md-8"></div>
-			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<div class="col-md-6">
+					<form:form action="agregarProductoAlCarrito"
+					method="POST" class="form-horizontal">
+					<div class="form-group">
+						<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
+						<div class="col-sm-4">
+							<select class="form-control" name="nombre" id="nombre">
+								<option>- Seleccione Producto -</option>
+								<c:forEach items="${listaProductos}" var="productoAdd">
+									<option value="${productoAdd.nombre}">${productoAdd.nombre}</option>
+								</c:forEach>
+							</select>
+						</div>
+					</div>
+					<div class="form-group " align="center">
+						<div class="col-sm-offset-1 col-sm-10">
+							<button type="submit" class="btn btn-info" value="Agregar">Agregar</button>
+						</div>
+					</div>
+				</form:form>
+			</div>
+			<div class="col-md-6">
+					<form:form action="agregarDescuentoAlCarrito"
+					method="POST" class="form-horizontal">
+					<div class="form-group">
+						<label name="nombre" for="nombre" class="col-sm-4 control-label">Descuento</label>
+						<div class="col-sm-4">
+							<select class="form-control" name="nombre" id="nombre">
+								<option>- Seleccione tipo -</option>
+								<option value="Monto">Monto</option>
+								<option value="Porcentaje">Porcentajeo</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group " align="center">
+						<div class="col-sm-offset-1 col-sm-10">
+							<button type="submit" class="btn btn-info" value="Agregar">Agregar</button>
+						</div>
+					</div>
+				</form:form>
+			</div>
+			</div>
+			<div class="col-md-6">TABLA TICKET</div>
 		</div>
 		<div class="col-md-12" style="height: 120px">
 			<div class="text-info" align="center">Universidad Nacional de
