@@ -31,23 +31,5 @@ public class ControllerSupermercado {
 	public ModelAndView verCarrito() {
 		return new ModelAndView("carrito");
 	}
-
-	@RequestMapping(value = "agregarProductoAlCarrito", method = RequestMethod.POST)
-	public ModelAndView agregarStock(@RequestParam("nombre") String nombre) {
-		Producto productoAAgregar = new Producto();
-		productoAAgregar.setNombre(nombre);
-		carrito.agregarProducto(productoAAgregar);
-		return new ModelAndView("agregarSubmit");
-	} // tiene que hacer redirect?
 	
-	@RequestMapping(value = "agregarDescuentoAlCarrito", method = RequestMethod.POST)
-	public ModelAndView agregarStock(@RequestParam("tipo") String tipo,
-									@RequestParam("valor") double valor) {
-		Descuento descuentoAAgregar = new Descuento();
-		if (tipo=="Monto"){descuentoAAgregar.setMonto(valor);}
-		if (tipo=="Porcentaje"){descuentoAAgregar.setPorcentaje(valor);}
-		carrito.aplicarDescuento(descuentoAAgregar);
-		return new ModelAndView("agregarSubmit");
-	} // tiene que hacer redirect?
-
 }
