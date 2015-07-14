@@ -30,7 +30,6 @@
 </nav>
 </div>
    <div class="col-md-2"></div>
-  
          <h1 style="text-align:center"> <small>CARRITO</small></h1>   
          <h1 style="text-align:center"> <small><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></small></h1>   
   </div>
