@@ -81,7 +81,6 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</nav>\r\n");
       out.write("</div>\r\n");
       out.write("   <div class=\"col-md-2\"></div>\r\n");
-      out.write("  \r\n");
       out.write("         <h1 style=\"text-align:center\"> <small>CARRITO</small></h1>   \r\n");
       out.write("         <h1 style=\"text-align:center\"> <small><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span></small></h1>   \r\n");
       out.write("  </div>\r\n");

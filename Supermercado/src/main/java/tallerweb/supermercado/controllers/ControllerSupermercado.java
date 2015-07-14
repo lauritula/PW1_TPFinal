@@ -31,5 +31,5 @@ public class ControllerSupermercado {
 	public ModelAndView verCarrito() {
 		return new ModelAndView("carrito");
 	}
-	
+
 }
