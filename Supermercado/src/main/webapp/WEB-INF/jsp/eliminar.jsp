@@ -24,8 +24,8 @@
       <ul class="nav navbar-nav">
         <li><a href="irIndex"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Volver a inicio</a></li>
         <li><a href="altaProducto"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Dar de Alta un Producto</a></li>
-        <li class="active"><a href="agregarStock"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Agregar Stock</a> </li> 
-        <li><a href="eliminarStock"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Eliminar Stock</a> </li> 
+        <li><a href="agregarStock"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Agregar Stock</a> </li> 
+        <li class="active"><a href="eliminarStock"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Eliminar Stock</a> </li> 
         <li><a href="verCarrito"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ver Carrito</a>  </li> 
       </ul>
     </div>
