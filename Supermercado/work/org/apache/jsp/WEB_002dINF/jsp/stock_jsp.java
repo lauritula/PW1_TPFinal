@@ -96,12 +96,12 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:150px\">\r\n");
       out.write(" \r\n");
-      out.write("\t<div class=\"table table-striped\"> \r\n");
-      out.write("\t \t<table class=\"table\">\r\n");
+      out.write("\t<div class=\"table table-condensed\"> \r\n");
+      out.write("\t \t<table class=\"table\" >\r\n");
       out.write("\t\t\t<tr>\r\n");
-      out.write("\t\t\t  <td align=center><strong> Nombre </strong></td>\r\n");
-      out.write("\t\t\t  <td align=center><strong> Precio </strong></td>\r\n");
-      out.write("\t\t\t  <td align=center><strong> Cantidad </strong></td>\r\n");
+      out.write("\t\t\t  <td align=center class=\"success\" width=\"20%\"><strong> Nombre </strong></td>\r\n");
+      out.write("\t\t\t  <td align=center class=\"success\" width=\"20%\"><strong> Precio </strong></td>\r\n");
+      out.write("\t\t\t  <td align=center class=\"success\" width=\"20%\"><strong> Cantidad </strong></td>\r\n");
       out.write("\t\t\t</tr>\r\n");
       out.write("\t\t\t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
@@ -158,13 +158,13 @@ public final class stock_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\r\n");
           out.write("\t\t\t<tr>\r\n");
-          out.write("\t\t\t\t<td align=center> ");
+          out.write("\t\t\t\t<td align=center class=\"active\"> ");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${stock.key.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write(" </td>\r\n");
-          out.write("\t\t\t\t<td align=center> ");
+          out.write("\t\t\t\t<td align=center class=\"active\"> ");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${stock.key.precio}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write(" </td>\r\n");
-          out.write("\t\t\t\t<td align=center> ");
+          out.write("\t\t\t\t<td align=center class=\"active\"> ");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${stock.value}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write(" </td>\r\n");
           out.write("\t\t\t</tr>\r\n");

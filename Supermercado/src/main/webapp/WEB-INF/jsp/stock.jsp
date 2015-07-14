@@ -40,18 +40,18 @@
   </div>
  <div class="col-md-12" style="height:150px">
  
-	<div class="table table-striped"> 
-	 	<table class="table">
+	<div class="table table-condensed"> 
+	 	<table class="table" >
 			<tr>
-			  <td align=center><strong> Nombre </strong></td>
-			  <td align=center><strong> Precio </strong></td>
-			  <td align=center><strong> Cantidad </strong></td>
+			  <td align=center class="success" width="20%"><strong> Nombre </strong></td>
+			  <td align=center class="success" width="20%"><strong> Precio </strong></td>
+			  <td align=center class="success" width="20%"><strong> Cantidad </strong></td>
 			</tr>
 			<c:forEach items="${stockSuper}" var="stock">
 			<tr>
-				<td align=center> ${stock.key.nombre} </td>
-				<td align=center> ${stock.key.precio} </td>
-				<td align=center> ${stock.value} </td>
+				<td align=center class="active"> ${stock.key.nombre} </td>
+				<td align=center class="active"> ${stock.key.precio} </td>
+				<td align=center class="active"> ${stock.value} </td>
 			</tr>
 			</c:forEach>
 		</table>
