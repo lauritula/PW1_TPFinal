@@ -63,7 +63,7 @@
 						<div class="col-sm-4">
 							<select class="form-control" name="nombre" id="nombre">
 								<option>- Seleccione Producto -</option>
-								<c:forEach items="${listaProductos}" var="productoAdd">
+								<c:forEach items="${productList}" var="productoAdd">
 									<option value="${productoAdd.nombre}">${productoAdd.nombre}</option>
 								</c:forEach>
 							</select>

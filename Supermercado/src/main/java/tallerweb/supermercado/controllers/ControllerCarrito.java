@@ -17,10 +17,10 @@ public class ControllerCarrito {
 	private Stock stockSupermercado = Stock.getInstance();
 	private Carrito carrito = Carrito.getInstance();
 
-	@ModelAttribute("listaProductos")
-	public Set<Producto> productos() {
-		return stockSupermercado.listarProductosDisponibles();
-	}
+//	@ModelAttribute("listaProductos")
+//	public Set<Producto> productos() {
+//		return stockSupermercado.listarProductosDisponibles();
+//	}
 	@RequestMapping(value = "agregarProductoAlCarrito", method = RequestMethod.POST)
 	public String agregarStock(@RequestParam("nombre") String nombre) {
 		Producto productoAAgregar = new Producto();
