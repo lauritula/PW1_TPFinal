@@ -98,20 +98,12 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("         <h1 style=\"text-align:center\"> <small><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span></small></h1>   \r\n");
       out.write("  </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:150px\">\r\n");
-      out.write(" \r\n");
-      out.write("  \r\n");
       out.write(" ");
       if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write(" \r\n");
-      out.write("\r\n");
       out.write(" </div>\r\n");
-      out.write(" <div class=\"col-md-12\" style=\"height:150px\">\r\n");
-      out.write(" <div class=\"col-md-2\"></div>\r\n");
       out.write("\r\n");
-      out.write(" <div class=\"col-md-2\"></div>\r\n");
-      out.write(" </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:120px\"> \r\n");
       out.write("  <div class=\"text-info\" align=\"center\">Universidad Nacional de La Matanza</div> \r\n");
       out.write("  <div class=\"text-info\" align=\"center\">Tecnicatura en Desarrollo Web</div> \r\n");
@@ -143,13 +135,13 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/eliminar.jsp(44,1) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(42,1) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setModelAttribute("producto");
-    // /WEB-INF/jsp/eliminar.jsp(44,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(42,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("eliminarSubmit");
-    // /WEB-INF/jsp/eliminar.jsp(44,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(42,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("POST");
-    // /WEB-INF/jsp/eliminar.jsp(44,1) null
+    // /WEB-INF/jsp/eliminar.jsp(42,1) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("form-horizontal"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
@@ -202,9 +194,9 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/eliminar.jsp(50,12) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/eliminar.jsp(50,12) '${productList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/eliminar.jsp(50,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(48,12) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/eliminar.jsp(48,12) '${productList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/eliminar.jsp(48,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("productL");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {

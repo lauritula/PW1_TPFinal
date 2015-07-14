@@ -39,8 +39,6 @@
          <h1 style="text-align:center"> <small><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></small></h1>   
   </div>
  <div class="col-md-12" style="height:150px">
- 
-  
  <form:form modelAttribute="producto" action="eliminarSubmit" method="POST" class="form-horizontal">
 		  <div class="form-group">
 		  	<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
@@ -59,14 +57,8 @@
 		    </div>
 		 </div>
 	 </form:form>
- 
-
  </div>
- <div class="col-md-12" style="height:150px">
- <div class="col-md-2"></div>
 
- <div class="col-md-2"></div>
- </div>
  <div class="col-md-12" style="height:120px"> 
   <div class="text-info" align="center">Universidad Nacional de La Matanza</div> 
   <div class="text-info" align="center">Tecnicatura en Desarrollo Web</div> 
