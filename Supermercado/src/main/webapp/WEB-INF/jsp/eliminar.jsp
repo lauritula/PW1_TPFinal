@@ -35,24 +35,31 @@
    <div class="col-md-1"></div>
 
          <h1 style="text-align:center"> <small>SUPERMERCADO</small></h1>   
-         <h4 style="text-align:center"> <small>Agregar Stock a un Producto</small></h4> 
+         <h4 style="text-align:center"> <small>Eliminar Stock de un producto</small></h4> 
          <h1 style="text-align:center"> <small><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></small></h1>   
   </div>
  <div class="col-md-12" style="height:150px">
  
-	<form:form action="eliminarSubmit" method="POST">
-	<h2> Eliminar Stock: </h2>
-		</br>		
-		<label name="nombre">Producto: </label>
-		<select name="nombre" id="nombre">
-		    <option>- Seleccione Producto -</option>
-		    <c:forEach items="${productList}" var="productL">
-				<option value="${productL.nombre}">${productL.nombre}</option>
-			</c:forEach>
-		</select>
-		</br></br>		
-		<input type="submit" value="Eliminar Stock"/>
-	</form:form>
+  
+ <form:form modelAttribute="producto" action="eliminarSubmit" method="POST" class="form-horizontal">
+		  <div class="form-group">
+		  	<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
+			    <div class="col-sm-4">
+			   	 <select class="form-control" name="nombre" id="nombre">
+			      		    <option>- Seleccione Producto -</option>
+		   						 <c:forEach items="${productList}" var="productL">
+									<option value="${productL.nombre}">${productL.nombre} </option>
+								 </c:forEach>
+				 </select>
+			     </div>
+		  </div>
+		 <div class="form-group " align="center">
+		    <div class="col-sm-offset-1 col-sm-10">
+		      <button type="submit" class="btn btn-info" value="Eliminar Stock"">Eliminar Stock</button>
+		    </div>
+		 </div>
+	 </form:form>
+ 
 
  </div>
  <div class="col-md-12" style="height:150px">

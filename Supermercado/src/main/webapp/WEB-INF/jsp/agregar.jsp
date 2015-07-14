@@ -40,25 +40,31 @@
   </div>
  <div class="col-md-12" style="height:150px">
  
-	<form:form action="agregarSubmit" method="POST">
-		</br>		
-		<label name="nombre">Producto: </label>
-		<select name="nombre" id="nombre">
-		    <option>- Seleccione Producto -</option>
-		    <c:forEach items="${productList}" var="productL">
-				<option value="${productL.nombre}">${productL.nombre} </option>
-			</c:forEach>
-		</select>
-		</br></br>		
-		<label name="cantidad">Cantidad: </label>
-		<input type="text" name="cantidad" id="cantidad" size="5">
-		</br></br>
-
-		<input type="submit" value="Actualizar Stock"/>
-	</form:form>
-
+ <form:form modelAttribute="producto" action="agregarSubmit" method="POST" class="form-horizontal">
+		  <div class="form-group">
+		  	<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
+			    <div class="col-sm-4">
+			   	 <select class="form-control" name="nombre" id="nombre">
+			      		    <option>- Seleccione Producto -</option>
+		   						 <c:forEach items="${productList}" var="productL">
+									<option value="${productL.nombre}">${productL.nombre} </option>
+								 </c:forEach>
+				 </select>
+			     </div>
+		  </div>
+		  <div class="form-group" >
+		  	<label name="cantidad" for="precio" class="col-sm-4 control-label">Cantidad</label>
+			    <div class="col-sm-4">
+			      <input type="text" class="form-control" name="cantidad" id="cantidad" size="5" placeholder="Ingrese Cantidad"/>
+			    </div>
+		  </div>
+		 <div class="form-group " align="center">
+		    <div class="col-sm-offset-1 col-sm-10">
+		      <button type="submit" class="btn btn-info" value="Actualizar Stock">Actualizar Stock</button>
+		    </div>
+		 </div>
+	 </form:form>
  </div>
- 
  <div class="col-md-12" style="height:120px"> 
   <div class="text-info" align="center">Universidad Nacional de La Matanza</div> 
   <div class="text-info" align="center">Tecnicatura en Desarrollo Web</div> 

@@ -11,7 +11,7 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
@@ -22,14 +22,14 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005faction.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
   }
 
@@ -94,15 +94,17 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("   <div class=\"col-md-1\"></div>\r\n");
       out.write("\r\n");
       out.write("         <h1 style=\"text-align:center\"> <small>SUPERMERCADO</small></h1>   \r\n");
-      out.write("         <h4 style=\"text-align:center\"> <small>Agregar Stock a un Producto</small></h4> \r\n");
+      out.write("         <h4 style=\"text-align:center\"> <small>Eliminar Stock de un producto</small></h4> \r\n");
       out.write("         <h1 style=\"text-align:center\"> <small><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span></small></h1>   \r\n");
       out.write("  </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:150px\">\r\n");
       out.write(" \r\n");
-      out.write("\t");
+      out.write("  \r\n");
+      out.write(" ");
       if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
+      out.write(" \r\n");
       out.write("\r\n");
       out.write(" </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:150px\">\r\n");
@@ -138,32 +140,41 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/eliminar.jsp(43,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(44,1) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setModelAttribute("producto");
+    // /WEB-INF/jsp/eliminar.jsp(44,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("eliminarSubmit");
-    // /WEB-INF/jsp/eliminar.jsp(43,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(44,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("POST");
+    // /WEB-INF/jsp/eliminar.jsp(44,1) null
+    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("form-horizontal"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
       if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\r\n");
-          out.write("\t<h2> Eliminar Stock: </h2>\r\n");
-          out.write("\t\t</br>\t\t\r\n");
-          out.write("\t\t<label name=\"nombre\">Producto: </label>\r\n");
-          out.write("\t\t<select name=\"nombre\" id=\"nombre\">\r\n");
-          out.write("\t\t    <option>- Seleccione Producto -</option>\r\n");
-          out.write("\t\t    ");
+          out.write("\t\t  <div class=\"form-group\">\r\n");
+          out.write("\t\t  \t<label name=\"nombre\" for=\"nombre\" class=\"col-sm-4 control-label\">Producto</label>\r\n");
+          out.write("\t\t\t    <div class=\"col-sm-4\">\r\n");
+          out.write("\t\t\t   \t <select class=\"form-control\" name=\"nombre\" id=\"nombre\">\r\n");
+          out.write("\t\t\t      \t\t    <option>- Seleccione Producto -</option>\r\n");
+          out.write("\t\t   \t\t\t\t\t\t ");
           if (_jspx_meth_c_005fforEach_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("\r\n");
-          out.write("\t\t</select>\r\n");
-          out.write("\t\t</br></br>\t\t\r\n");
-          out.write("\t\t<input type=\"submit\" value=\"Eliminar Stock\"/>\r\n");
-          out.write("\t");
+          out.write("\t\t\t\t </select>\r\n");
+          out.write("\t\t\t     </div>\r\n");
+          out.write("\t\t  </div>\r\n");
+          out.write("\t\t <div class=\"form-group \" align=\"center\">\r\n");
+          out.write("\t\t    <div class=\"col-sm-offset-1 col-sm-10\">\r\n");
+          out.write("\t\t      <button type=\"submit\" class=\"btn btn-info\" value=\"Eliminar Stock\"\">Eliminar Stock</button>\r\n");
+          out.write("\t\t    </div>\r\n");
+          out.write("\t\t </div>\r\n");
+          out.write("\t ");
           int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -178,7 +189,7 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005faction.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }
@@ -191,9 +202,9 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/eliminar.jsp(49,6) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/eliminar.jsp(49,6) '${productList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/eliminar.jsp(49,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/eliminar.jsp(50,12) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/eliminar.jsp(50,12) '${productList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/eliminar.jsp(50,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("productL");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -201,13 +212,13 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\r\n");
-          out.write("\t\t\t\t<option value=\"");
+          out.write("\t\t\t\t\t\t\t\t\t<option value=\"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${productL.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write('"');
           out.write('>');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${productL.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</option>\r\n");
-          out.write("\t\t\t");
+          out.write(" </option>\r\n");
+          out.write("\t\t\t\t\t\t\t\t ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
