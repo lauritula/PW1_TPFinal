@@ -11,7 +11,7 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
@@ -21,13 +21,13 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -95,11 +95,9 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("         <h1 style=\"text-align:center\"> <small><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span></small></h1>   \r\n");
       out.write("  </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:150px\">\r\n");
-      out.write(" \r\n");
-      out.write("\t");
+      out.write("\t ");
       if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
         return;
-      out.write("\r\n");
       out.write("\r\n");
       out.write(" </div>\r\n");
       out.write(" <div class=\"col-md-12\" style=\"height:120px\"> \r\n");
@@ -130,29 +128,41 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/alta.jsp(43,1) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/alta.jsp(42,2) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setModelAttribute("producto");
-    // /WEB-INF/jsp/alta.jsp(43,1) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/alta.jsp(42,2) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("altaSubmit");
-    // /WEB-INF/jsp/alta.jsp(43,1) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/alta.jsp(42,2) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("POST");
+    // /WEB-INF/jsp/alta.jsp(42,2) null
+    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("form-horizontal"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
       if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\r\n");
-          out.write("\t\t<label path=\"nombre\"> Nombre <label>\r\n");
-          out.write("\t\t<input type=\"text\" name=\"nombre\" id=\"nombre\"/>\r\n");
-          out.write("\t\t</br></br>\r\n");
-          out.write("\t\t<label name=\"precio\">Precio<label>\r\n");
-          out.write("\t\t<input type=\"text\" name=\"precio\" id=\"precio\">\r\n");
-          out.write("\t\t</br></br>\r\n");
-          out.write("\t\t<input type=\"submit\" value=\"Alta\"/>\r\n");
-          out.write("\t");
+          out.write("\t\t  <div class=\"form-group\">\r\n");
+          out.write("\t\t  \t<label path=\"nombre\" for=\"nombre\" class=\"col-sm-4 control-label\">Nombre</label>\r\n");
+          out.write("\t\t\t    <div class=\"col-sm-4\">\r\n");
+          out.write("\t\t\t      <input type=\"text\" class=\"form-control\" name=\"nombre\" id=\"nombre\" placeholder=\"Ingrese producto\"/>\r\n");
+          out.write("\t\t\t     </div>\r\n");
+          out.write("\t\t  </div>\r\n");
+          out.write("\t\t  <div class=\"form-group\" >\r\n");
+          out.write("\t\t  \t<label name=\"precio\" for=\"precio\" class=\"col-sm-4 control-label\">Precio</label>\r\n");
+          out.write("\t\t\t    <div class=\"col-sm-4\">\r\n");
+          out.write("\t\t\t      <input type=\"text\" class=\"form-control\" name=\"precio\" id=\"precio\" placeholder=\"Ingrese precio\"/>\r\n");
+          out.write("\t\t\t    </div>\r\n");
+          out.write("\t\t  </div>\r\n");
+          out.write("\t\t <div class=\"form-group \" align=\"center\">\r\n");
+          out.write("\t\t    <div class=\"col-sm-offset-1 col-sm-10\">\r\n");
+          out.write("\t\t      <button type=\"submit\" class=\"btn btn-info\" value=\"Alta\">Alta Producto</button>\r\n");
+          out.write("\t\t    </div>\r\n");
+          out.write("\t\t </div>\r\n");
+          out.write("\t ");
           int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -167,7 +177,7 @@ public final class alta_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }

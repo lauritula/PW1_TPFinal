@@ -39,17 +39,25 @@
          <h1 style="text-align:center"> <small><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></small></h1>   
   </div>
  <div class="col-md-12" style="height:150px">
- 
-	<form:form modelAttribute="producto" action="altaSubmit" method="POST">
-		<label path="nombre"> Nombre <label>
-		<input type="text" name="nombre" id="nombre"/>
-		</br></br>
-		<label name="precio">Precio<label>
-		<input type="text" name="precio" id="precio">
-		</br></br>
-		<input type="submit" value="Alta"/>
-	</form:form>
-
+	 <form:form modelAttribute="producto" action="altaSubmit" method="POST" class="form-horizontal">
+		  <div class="form-group">
+		  	<label path="nombre" for="nombre" class="col-sm-4 control-label">Nombre</label>
+			    <div class="col-sm-4">
+			      <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese producto"/>
+			     </div>
+		  </div>
+		  <div class="form-group" >
+		  	<label name="precio" for="precio" class="col-sm-4 control-label">Precio</label>
+			    <div class="col-sm-4">
+			      <input type="text" class="form-control" name="precio" id="precio" placeholder="Ingrese precio"/>
+			    </div>
+		  </div>
+		 <div class="form-group " align="center">
+		    <div class="col-sm-offset-1 col-sm-10">
+		      <button type="submit" class="btn btn-info" value="Alta">Alta Producto</button>
+		    </div>
+		 </div>
+	 </form:form>
  </div>
  <div class="col-md-12" style="height:120px"> 
   <div class="text-info" align="center">Universidad Nacional de La Matanza</div> 
