@@ -9,12 +9,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Alta de producto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<title>Actualizacion de Stock</title>
 </head>
 <body>
-	<h1>Stock de Producto Actualizado</h1> 
-	<br></br>
-	<div> <a href="verStock"> Ver Stock </a> </div>
-	<div> <a href="irIndex"> Volver al Inicio </a> </div>
+<div class="container" style="background-color:lavender">
+  <div class="jumbotron" style="background-color:lavender">
+         <h1 style="text-align:center"> <small> Stock de Producto Actualizado</small></h1>   
+         <h1 style="text-align:center"> <small><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></small></h1>   
+  </div>
+ <div class="col-md-12" style="height:300px">
+ <div class="col-md-2"></div>
+ <div class="col-md-8">
+ 	<p>
+	 <a href="verStock" class="btn btn-primary btn-lg btn-block"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Ver Stock</a>
+	 <a href="altaProducto" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Dar de Alta un Producto</a>
+	 <a href="irIndex" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Volver a inicio</a>
+ </p>
+</div>
+ <div class="col-md-2"></div>
+ </div>
+ <div class="col-md-12" style="height:120px"> 
+  <div class="text-info" align="center">Universidad Nacional de La Matanza</div> 
+  <div class="text-info" align="center">Tecnicatura en Desarrollo Web</div> 
+  <div class="text-info" align="center">Taller Web 1 - Trabajo Práctico Final</div>
+  <div class="text-info" align="center">RABUÑAL, JULIANA LAURA - TULA ACOSTA, MARIA LAURA</div>
+ </div>
+ </div>
 </body>
 </html>
