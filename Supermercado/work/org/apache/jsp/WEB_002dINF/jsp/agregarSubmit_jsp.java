@@ -65,7 +65,7 @@ public final class agregarSubmit_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("  <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css\">\r\n");
       out.write("  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n");
       out.write("  <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>\r\n");
-      out.write("<title>Alta de producto</title>\r\n");
+      out.write("<title>Actualizacion de Stock</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("<div class=\"container\" style=\"background-color:lavender\">\r\n");
