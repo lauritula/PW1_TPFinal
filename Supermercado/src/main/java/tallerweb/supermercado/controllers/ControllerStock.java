@@ -91,4 +91,7 @@ public class ControllerStock {
 		stockSupermercado.eliminarProducto(productoAEliminarStock);
 		return new ModelAndView("eliminarSubmit");
 	}
+	
+	
+	
 }

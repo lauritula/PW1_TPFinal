@@ -1,5 +1,6 @@
 package tallerweb.supermercado.controllers;
 
+import java.util.Map;
 import java.util.Set;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,24 +15,27 @@ import tallerweb.supermercado.modelo.Producto;
 import tallerweb.supermercado.modelo.Stock;
 
 public class ControllerCarrito {
-	private Stock stockSupermercado = Stock.getInstance();
 	private Carrito carrito = Carrito.getInstance();
+	private Stock stockSupermercado = Stock.getInstance();
 
 //	@ModelAttribute("listaProductos")
 //	public Set<Producto> productos() {
 //		return stockSupermercado.listarProductosDisponibles();
 //	}
-	@RequestMapping(value = "agregarProductoAlCarrito", method = RequestMethod.POST)
-	public String agregarStock(@RequestParam("nombre") String nombre) {
-		Producto productoAAgregar = new Producto();
-		productoAAgregar.setNombre(nombre);
-		carrito.agregarProducto(productoAAgregar);
-		return "redirect:/carrito/";
-	} 
+	
+//	@RequestMapping(value = "agregarProductoAlCarrito", method = RequestMethod.POST)
+//	public String agregarStock(@RequestParam("nombre") String nombre) {
+//		Producto productoAAgregar = new Producto();
+//		productoAAgregar.setNombre(nombre);
+//		carrito.agregarProducto(productoAAgregar);
+//		return "redirect:/carrito/";
+//	} 
+	
+
 
 //	@RequestMapping(value = "agregarDescuentoAlCarrito", method = RequestMethod.POST)
 //	public ModelAndView agregarStock(@RequestParam("tipo") String tipo,
-//			@RequestParam("valor") double valor) {
+//			@RequestParam("valor") Double valor) {
 //		Descuento descuentoAAgregar = new Descuento();
 //		if (tipo == "Monto") {
 //			descuentoAAgregar.setMonto(valor);
@@ -40,7 +44,7 @@ public class ControllerCarrito {
 //			descuentoAAgregar.setPorcentaje(valor);
 //		}
 //		carrito.aplicarDescuento(descuentoAAgregar);
-//		return new ModelAndView("agregarSubmit");
-//	} // tiene que hacer redirect?
+//		return new ModelAndView("redirect:carrito");
+//	} 
 
 }

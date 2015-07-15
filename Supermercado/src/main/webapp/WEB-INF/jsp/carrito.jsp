@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-	<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -56,42 +54,44 @@
 		<div class="col-md-12" style="height: 300px">
 			<div class="col-md-6">
 				<div class="col-md-6">
-					<form:form action="agregarProductoAlCarrito"
-					method="POST" class="form-horizontal">
-					<div class="form-group">
-						<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
-						<div class="col-sm-4">
-							<select class="form-control" name="nombre" id="nombre">
-								<option>- Seleccione Producto -</option>
-								<c:forEach items="${productList}" var="productoAdd">
-									<option value="${productoAdd.nombre}">${productoAdd.nombre}</option>
-								</c:forEach>
-							</select>
-						</div>
-					</div>
-					<div class="form-group " align="center">
-						<div class="col-sm-offset-1 col-sm-10">
-							<button type="submit" class="btn btn-info" value="Agregar">Agregar</button>
-						</div>
-					</div>
-				</form:form>
+					<form:form modelAttribute="producto"
+			method="POST" class="form-horizontal">
+				<div class="form-group">
+ 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label> 
+				<div class="col-sm-4"> 
+						<select class="form-control" name="nombre" id="nombre"> 
+							<option>- Seleccione Producto -</option> 
+							<c:forEach items="${productList}" var="productL"> 
+								<option value="${productL.nombre}">${productL.nombre}</option> 
+ 							</c:forEach> 
+ 						</select> 
+					</div> 
+				</div> 
+ 				<div class="form-group " align="center"> 
+ 					<div class="col-sm-offset-1 col-sm-10"> 
+ 						<button type="submit" class="btn btn-info" value="Agregar Producto">Agregar 
+ 							Producto</button> 
+ 					</div> 
+				</div> 			</form:form> 
 			</div>
 			<div class="col-md-6">
 					<form:form action="agregarDescuentoAlCarrito"
 					method="POST" class="form-horizontal">
 					<div class="form-group">
-						<label name="nombre" for="nombre" class="col-sm-4 control-label">Descuento</label>
+						<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo Descuento</label>
 						<div class="col-sm-4">
-							<select class="form-control" name="nombre" id="nombre">
+							<select class="form-control" name="tipo" id="tipo">
 								<option>- Seleccione tipo -</option>
 								<option value="Monto">Monto</option>
-								<option value="Porcentaje">Porcentajeo</option>
+								<option value="Porcentaje">Porcentaje</option>
 							</select>
+							<label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
+							<input type="text" name="valor" id="valor"/>
 						</div>
 					</div>
 					<div class="form-group " align="center">
 						<div class="col-sm-offset-1 col-sm-10">
-							<button type="submit" class="btn btn-info" value="Agregar">Agregar</button>
+							<button type="submit" class="btn btn-info" value="Agregar Descuento">Agregar Descuento</button>
 						</div>
 					</div>
 				</form:form>

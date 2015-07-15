@@ -74,7 +74,7 @@
 				</div>
 				<div class="form-group " align="center">
 					<div class="col-sm-offset-1 col-sm-10">
-						<button type="submit" class="btn btn-info" value="Eliminar Stock"">Eliminar
+						<button type="submit" class="btn btn-info" value="Eliminar Stock">Eliminar
 							Stock</button>
 					</div>
 				</div>
