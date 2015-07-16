@@ -62,7 +62,7 @@
 				 <div class="form-group"> 
 	 				<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
 				 			<div class="col-sm-4">  
-				 				<select class="form-control" name="nombre" id="nombre" class="required">  
+				 				<select class="form-control" name="nombre" id="nombre">  
 				 					<option>- Seleccione Producto -</option>  
 				 						<c:forEach items="${productList}" var="productL"> 
 				 							<option value="${productL.nombre}">${productL.nombre}</option>  
@@ -126,8 +126,8 @@
 					Total: ${total}
 				</div>
         		<div class="col-sm-2">
-					<a href="compraSubmit" class="link"><input type="button" value="Confirmar Compra" id="boton1"></a></div>
-						<div class="col-sm-2"><a href="vaciarCarrito" class="link"><input type="button" value="Cancelar" id="boton2"></a>
+					<a href="compraSubmit" class="link"><input type="button" class="btn btn-success" value="Confirmar Compra" id="boton1"></a></div>
+						<div class="col-sm-2"><a href="vaciarCarrito" class="link"><input type="button" class="btn btn-danger" value="Cancelar" id="boton2"></a>
 				</div>
 			</div>
 			
@@ -139,6 +139,7 @@
 			</div>
 		</div>	
 	</div>
+
 </body>
 </html>
 	

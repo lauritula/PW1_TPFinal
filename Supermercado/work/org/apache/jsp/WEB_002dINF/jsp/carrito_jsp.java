@@ -161,8 +161,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("        \t\t<div class=\"col-sm-2\">\r\n");
-      out.write("\t\t\t\t\t<a href=\"compraSubmit\" class=\"link\"><input type=\"button\" value=\"Confirmar Compra\" id=\"boton1\"></a></div>\r\n");
-      out.write("\t\t\t\t\t\t<div class=\"col-sm-2\"><a href=\"vaciarCarrito\" class=\"link\"><input type=\"button\" value=\"Cancelar\" id=\"boton2\"></a>\r\n");
+      out.write("\t\t\t\t\t<a href=\"compraSubmit\" class=\"link\"><input type=\"button\" class=\"btn btn-success\" value=\"Confirmar Compra\" id=\"boton1\"></a></div>\r\n");
+      out.write("\t\t\t\t\t\t<div class=\"col-sm-2\"><a href=\"vaciarCarrito\" class=\"link\"><input type=\"button\" class=\"btn btn-danger\" value=\"Cancelar\" id=\"boton2\"></a>\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t\r\n");
@@ -174,6 +174,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>\t\r\n");
       out.write("\t</div>\r\n");
+      out.write("\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
       out.write("\t\r\n");
@@ -221,7 +222,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t <div class=\"form-group\"> \r\n");
           out.write("\t \t\t\t\t<label name=\"nombre\" for=\"nombre\" class=\"col-sm-4 control-label\">Producto</label>  \r\n");
           out.write("\t\t\t\t \t\t\t<div class=\"col-sm-4\">  \r\n");
-          out.write("\t\t\t\t \t\t\t\t<select class=\"form-control\" name=\"nombre\" id=\"nombre\" class=\"required\">  \r\n");
+          out.write("\t\t\t\t \t\t\t\t<select class=\"form-control\" name=\"nombre\" id=\"nombre\">  \r\n");
           out.write("\t\t\t\t \t\t\t\t\t<option>- Seleccione Producto -</option>  \r\n");
           out.write("\t\t\t\t \t\t\t\t\t\t");
           if (_jspx_meth_c_005fforEach_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
