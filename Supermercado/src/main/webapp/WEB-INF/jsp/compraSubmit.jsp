@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-md-2"></div>
 			<h1 style="text-align: center">
-				<small>COMPRA REALIZADA!</small>
+				<small>COMPRA REALIZADA! :D</small>
 			</h1>
 			<h1 style="text-align: center">
 				<small><span class="glyphicon glyphicon-shopping-cart"
