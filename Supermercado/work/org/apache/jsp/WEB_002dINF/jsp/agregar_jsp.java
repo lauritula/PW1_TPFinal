@@ -11,7 +11,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
@@ -22,14 +22,14 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
   }
 
@@ -148,7 +148,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
     // /WEB-INF/jsp/agregar.jsp(60,3) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
@@ -159,6 +159,10 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_form_005fform_005f0.setMethod("POST");
     // /WEB-INF/jsp/agregar.jsp(60,3) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("form-horizontal"));
+    // /WEB-INF/jsp/agregar.jsp(60,3) null
+    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "data-toggle", new String("validator"));
+    // /WEB-INF/jsp/agregar.jsp(60,3) null
+    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "role", new String("form"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
@@ -180,7 +184,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t<div class=\"form-group\">\r\n");
           out.write("\t\t\t\t\t<label name=\"cantidad\" for=\"precio\" class=\"col-sm-4 control-label\">Cantidad</label>\r\n");
           out.write("\t\t\t\t\t\t<div class=\"col-sm-4\">\r\n");
-          out.write("\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"cantidad\" id=\"cantidad\" size=\"5\" placeholder=\"Ingrese Cantidad\" />\r\n");
+          out.write("\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"cantidad\" id=\"cantidad\" size=\"5\" placeholder=\"Ingrese Cantidad\" required/>\r\n");
           out.write("\t\t\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t<div class=\"form-group \" align=\"center\">\r\n");
@@ -203,7 +207,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }

@@ -57,17 +57,17 @@
 			</h1>
 		</div>
 		<div class="col-md-12" style="height: 150px">
-			<form:form modelAttribute="producto" action="altaSubmit" method="POST" class="form-horizontal">
+			<form:form modelAttribute="producto" action="altaSubmit" method="POST" class="form-horizontal" data-toggle="validator" role="form">
 				<div class="form-group">
 					<label path="nombre" for="nombre" class="col-sm-4 control-label">Nombre</label>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese producto" />
+							<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese producto" required />
 						</div>
 				</div>
 				<div class="form-group">
 					<label name="precio" for="precio" class="col-sm-4 control-label">Precio</label>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" name="precio" id="precio" placeholder="Ingrese precio" />
+							<input type="text" class="form-control" name="precio" id="precio" placeholder="Ingrese precio" required />
 						</div>
 				</div>
 				<div class="form-group " align="center">

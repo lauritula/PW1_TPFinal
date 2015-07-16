@@ -56,11 +56,11 @@
 				</h1>
 		</div>
 		<div class="col-md-12" style="height: 100px">
-			<form:form modelAttribute="producto" method="POST" class="form-horizontal" action="agregarProductoAlCarrito"> 
+			<form:form modelAttribute="producto" method="POST" class="form-horizontal" action="agregarProductoAlCarrito" data-toggle="validator" role="form"> 
 				 <div class="form-group"> 
 	 				<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
 				 			<div class="col-sm-4">  
-				 				<select class="form-control" name="nombre" id="nombre">  
+				 				<select class="form-control" name="nombre" id="nombre" required>  
 				 					<option>- Seleccione Producto -</option>  
 				 						<c:forEach items="${productList}" var="productL"> 
 				 							<option value="${productL.nombre}">${productL.nombre}</option>  
@@ -76,7 +76,7 @@
 			</form:form>  
 		 </div> 
 		<div class="col-md-12" style="height:150px">
-			<form:form action="agregarDescuentoAlCarrito" method="POST" class="form-horizontal">
+			<form:form action="agregarDescuentoAlCarrito" method="POST" class="form-horizontal" data-toggle="validator" role="form">
 				<div class="form-group">
 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo Descuento</label>
 						<div class="col-sm-4">
@@ -87,7 +87,7 @@
 							</select> 
 							   <div class="col-md-12">
 							   	<label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
-									<input type="text" name="valor" id="valor" class="col-sm-4" />
+									<input type="text" name="valor" id="valor" class="col-sm-4" required/>
 								</div>
 						</div>
 				</div>

@@ -57,7 +57,7 @@
 				</h1>
 		</div>
 		<div class="col-md-12" style="height: 150px">
-			<form:form modelAttribute="producto" action="agregarSubmit" method="POST" class="form-horizontal">
+			<form:form modelAttribute="producto" action="agregarSubmit" method="POST" class="form-horizontal" data-toggle="validator" role="form">
 				<div class="form-group">
 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
 						<div class="col-sm-4">
@@ -72,7 +72,7 @@
 				<div class="form-group">
 					<label name="cantidad" for="precio" class="col-sm-4 control-label">Cantidad</label>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" name="cantidad" id="cantidad" size="5" placeholder="Ingrese Cantidad" />
+							<input type="text" class="form-control" name="cantidad" id="cantidad" size="5" placeholder="Ingrese Cantidad" required/>
 						</div>
 				</div>
 				<div class="form-group " align="center">
