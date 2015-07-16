@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-md-2"></div>
 			<h1 style="text-align: center">
-				<small>CARRITO</small>
+				<small>COMPRA REALIZADA</small>
 			</h1>
 			<h1 style="text-align: center">
 				<small><span class="glyphicon glyphicon-shopping-cart"
@@ -52,52 +52,6 @@
 			</h1>
 		</div>
 		<div class="col-md-12" style="height: 300px">
-			<div class="col-md-6">
-							<div class="col-md-6"> 
-										<form:form modelAttribute="producto" 
-				 			method="POST" class="form-horizontal"> 
-				 				<div class="form-group"> 
-	 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
-				 				<div class="col-sm-4">  
-				 						<select class="form-control" name="nombre" id="nombre">  
-				 							<option>- Seleccione Producto -</option>  
-				 							<c:forEach items="${productList}" var="productL"> 
-				 								<option value="${productL.nombre}">${productL.nombre}</option>  
-			  							</c:forEach>  
-				  						</select>  
-								</div>  
-								</div>  
-								<div class="form-group " align="center">  
-	 					<div class="col-sm-offset-1 col-sm-10">  
-										<button type="submit" class="btn btn-info" value="Agregar Producto">Agregar  
-										Producto</button>  
-								</div>  
-							</div> 			</form:form>  
-				 			</div> 
-				<div class="col-md-6">
-					<form:form action="agregarDescuentoAlCarrito" method="POST"
-						class="form-horizontal">
-						<div class="form-group">
-							<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo
-								Descuento</label>
-							<div class="col-sm-4">
-								<select class="form-control" name="tipo" id="tipo">
-									<option>- Seleccione tipo -</option>
-									<option value="Monto">Monto</option>
-									<option value="Porcentaje">Porcentaje</option>
-								</select> <label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
-								<input type="text" name="valor" id="valor" />
-							</div>
-						</div>
-						<div class="form-group " align="center">
-							<div class="col-sm-offset-1 col-sm-10">
-								<button type="submit" class="btn btn-info"
-									value="Agregar Descuento">Agregar Descuento</button>
-							</div>
-						</div>
-					</form:form>
-				</div>
-			</div>
 			<div class="col-md-12">
 				<div class="table table-condensed">
 				<table class="table">
@@ -121,8 +75,7 @@
 			Total: ${total}
 			</div>
 			<div>
-				<a href="compraSubmitcompraSubmit" class="link"><input type="button" value="Confirmar Compra" id="boton1"></a>
-				<a href="vaciarCarrito" class="link"><input type="button" value="Cancelar" id="boton2"></a>
+				<a href="irIndex" class="link"><input type="button" value="Volver al Inicio" id="boton1"></a>
 			</div>
 			</div>
 		</div>

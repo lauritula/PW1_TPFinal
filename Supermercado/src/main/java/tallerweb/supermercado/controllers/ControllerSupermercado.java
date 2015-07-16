@@ -147,5 +147,31 @@ public class ControllerSupermercado {
 		carrito.aplicarDescuento(descuentoAAgregar);
 		return "redirect:verCarrito";
 	}
-		
+	
+	@ModelAttribute("subtotal")
+	public  Double returnSubtotal(){
+		return carrito.totalSinDescuentos();
+	}
+	
+	@ModelAttribute("total")
+	public  Double returnTotal(){
+		return carrito.total();
+	}
+	
+	@ModelAttribute("ahorro")
+	public  Double returnAhorro(){
+		return carrito.totalAhorros();
+	}
+	
+	@RequestMapping("vaciarCarrito")
+	public String vaciaCarrito(){
+		carrito.vaciar();
+		return "redirect:verCarrito";
+	}
+	
+	@RequestMapping("compraSubmit")
+	public ModelAndView ticketCompra(){
+		return new ModelAndView("compraSubmit");
+	}
+	
 }
