@@ -127,7 +127,7 @@
 			Total: ${total}</div>
 			
                <div class="col-sm-2">
-				<a href="compraSubmitcompraSubmit" class="link"><input type="button" value="Confirmar Compra" id="boton1"></a></div>
+				<a href="compraSubmit" class="link"><input type="button" value="Confirmar Compra" id="boton1"></a></div>
 				<div class="col-sm-2"><a href="vaciarCarrito" class="link"><input type="button" value="Cancelar" id="boton2"></a>
 			</div>
 			</div>

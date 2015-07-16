@@ -158,7 +158,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</div>\r\n");
       out.write("\t\t\t\r\n");
       out.write("               <div class=\"col-sm-2\">\r\n");
-      out.write("\t\t\t\t<a href=\"compraSubmitcompraSubmit\" class=\"link\"><input type=\"button\" value=\"Confirmar Compra\" id=\"boton1\"></a></div>\r\n");
+      out.write("\t\t\t\t<a href=\"compraSubmit\" class=\"link\"><input type=\"button\" value=\"Confirmar Compra\" id=\"boton1\"></a></div>\r\n");
       out.write("\t\t\t\t<div class=\"col-sm-2\"><a href=\"vaciarCarrito\" class=\"link\"><input type=\"button\" value=\"Cancelar\" id=\"boton2\"></a>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t</div>\r\n");
