@@ -71,11 +71,14 @@
 			</div>
 			<div class="col-md-12" style="height:200px">
 			<div class="col-sm-2">
-			Subtotal: ${subtotal}</div>
+			Subtotal: ${subtotal}
+			</div>
 			<div class="col-sm-2">
-			Ahorro: ${ahorro}</div>
+			Ahorro: ${ahorro}
+			</div>
 			<div class="col-sm-2">
-			Total: ${total}</div>
+			Total: ${total}
+			</div>
 			
 			 <div class="col-sm-2">
 				<a href="irIndex" class="link"><input type="button" value="Volver al Inicio" id="boton1"></a>
