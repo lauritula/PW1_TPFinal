@@ -1,5 +1,6 @@
 package tallerweb.supermercado.controllers;
 
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.stereotype.Controller;
@@ -39,20 +40,10 @@ public class ControllerSupermercado {
 	public Set<Producto> productosDisponibles() {
 		return stockSupermercado.listarProductosDisponibles();
 	}
-	
-//	@RequestMapping(value = "agregarDescuentoAlCarrito", method = RequestMethod.POST)
-//	public ModelAndView agregarStock(@RequestParam("tipo") String tipo,
-//			@RequestParam("valor") Double valor) {
-//		Descuento descuentoAAgregar = new Descuento();
-//		if (tipo == "Monto") {
-//			descuentoAAgregar.setMonto(valor);
-//		}
-//		if (tipo == "Porcentaje") {
-//			descuentoAAgregar.setPorcentaje(valor);
-//		}
-//		carrito.aplicarDescuento(descuentoAAgregar);
-//		return new ModelAndView("redirect:carrito");
-//	} 
 
-	
+//	@ModelAttribute("carritoTicket")
+//	public List<Producto> ticketProducto() {
+//		return carrito.verProductos();
+//	}
+		
 }

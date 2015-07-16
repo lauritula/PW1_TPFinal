@@ -53,51 +53,72 @@
 		</div>
 		<div class="col-md-12" style="height: 300px">
 			<div class="col-md-6">
+							<div class="col-md-6"> 
+						<				<form:form modelAttribute="producto" 
+				 			method="POST" class="form-horizontal"> 
+				 				<div class="form-group"> 
+	 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
+				 				<div class="col-sm-4">  
+				 						<select class="form-control" name="nombre" id="nombre">  
+				 							<option>- Seleccione Producto -</option>  
+				 							<c:forEach items="${productList}" var="productL"> 
+				 								<option value="${productL.nombre}">${productL.nombre}</option>  
+			  							</c:forEach>  
+				  						</select>  
+								</div>  
+								</div>  
+								<div class="form-group " align="center">  
+	 					<div class="col-sm-offset-1 col-sm-10">  
+										<button type="submit" class="btn btn-info" value="Agregar Producto">Agregar  
+										Producto</button>  
+								</div>  
+							</div> 			</form:form>  
+				 			</div> 
 				<div class="col-md-6">
-					<form:form modelAttribute="producto"
-			method="POST" class="form-horizontal">
-				<div class="form-group">
- 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label> 
-				<div class="col-sm-4"> 
-						<select class="form-control" name="nombre" id="nombre"> 
-							<option>- Seleccione Producto -</option> 
-							<c:forEach items="${productList}" var="productL"> 
-								<option value="${productL.nombre}">${productL.nombre}</option> 
- 							</c:forEach> 
- 						</select> 
-					</div> 
-				</div> 
- 				<div class="form-group " align="center"> 
- 					<div class="col-sm-offset-1 col-sm-10"> 
- 						<button type="submit" class="btn btn-info" value="Agregar Producto">Agregar 
- 							Producto</button> 
- 					</div> 
-				</div> 			</form:form> 
-			</div>
-			<div class="col-md-6">
-					<form:form action="agregarDescuentoAlCarrito"
-					method="POST" class="form-horizontal">
-					<div class="form-group">
-						<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo Descuento</label>
-						<div class="col-sm-4">
-							<select class="form-control" name="tipo" id="tipo">
-								<option>- Seleccione tipo -</option>
-								<option value="Monto">Monto</option>
-								<option value="Porcentaje">Porcentaje</option>
-							</select>
-							<label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
-							<input type="text" name="valor" id="valor"/>
+					<form:form action="agregarDescuentoAlCarrito" method="POST"
+						class="form-horizontal">
+						<div class="form-group">
+							<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo
+								Descuento</label>
+							<div class="col-sm-4">
+								<select class="form-control" name="tipo" id="tipo">
+									<option>- Seleccione tipo -</option>
+									<option value="Monto">Monto</option>
+									<option value="Porcentaje">Porcentaje</option>
+								</select> <label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
+								<input type="text" name="valor" id="valor" />
+							</div>
 						</div>
-					</div>
-					<div class="form-group " align="center">
-						<div class="col-sm-offset-1 col-sm-10">
-							<button type="submit" class="btn btn-info" value="Agregar Descuento">Agregar Descuento</button>
+						<div class="form-group " align="center">
+							<div class="col-sm-offset-1 col-sm-10">
+								<button type="submit" class="btn btn-info"
+									value="Agregar Descuento">Agregar Descuento</button>
+							</div>
 						</div>
-					</div>
-				</form:form>
+					</form:form>
+				</div>
 			</div>
+			<div class="col-md-12">
+<!-- 				<div class="table table-condensed"> -->
+<!-- 				<table class="table"> -->
+<!-- 					<tr> -->
+<!-- 						<td align=center class="success" width="20%"><strong> -->
+<!-- 								Cantidad </strong></td> -->
+<!-- 						<td align=center class="success" width="20%"><strong> -->
+<!-- 								Producto </strong></td> -->
+<!-- 						<td align=center class="success" width="20%"><strong> -->
+<!-- 								Precio </strong></td> -->
+<!-- 					</tr> -->
+<%-- 					<c:forEach items="${carritoTicket}" var="ticket"> --%>
+<!-- 						<tr> -->
+<!-- 							<td align=center class="active">1</td> -->
+<%-- 							<td align=center class="active">${ticket.nombre}</td> --%>
+<%-- 							<td align=center class="active">${ticket.precio}</td> --%>
+<!-- 						</tr> -->
+<%-- 					</c:forEach> --%>
+<!-- 				</table> -->
+<!-- 			</div> -->
 			</div>
-			<div class="col-md-6">TABLA TICKET</div>
 		</div>
 		<div class="col-md-12" style="height: 120px">
 			<div class="text-info" align="center">Universidad Nacional de
