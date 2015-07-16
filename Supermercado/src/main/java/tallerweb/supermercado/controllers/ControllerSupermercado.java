@@ -138,10 +138,11 @@ public class ControllerSupermercado {
 	public String agregarDescuento(@RequestParam("tipo") String tipo,
 			@RequestParam("valor") Double valor) {
 		Descuento descuentoAAgregar = new Descuento();
-		if (tipo == "Monto") {
+		if ("Monto".equals(tipo)) {
 			descuentoAAgregar.setMonto(valor);
 		}
-		if (tipo == "Porcentaje") {
+		else
+		if ("Porcentaje".equals(tipo)) {
 			descuentoAAgregar.setPorcentaje(valor);
 		}
 		carrito.aplicarDescuento(descuentoAAgregar);
