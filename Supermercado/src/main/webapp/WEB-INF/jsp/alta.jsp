@@ -72,7 +72,7 @@
 				</div>
 				<div class="form-group " align="center">
 					<div class="col-sm-offset-1 col-sm-10">
-						<button type="submit" class="btn btn-info" value="Alta">Alta Producto</button>
+						<button type="submit" class="btn btn-success" value="Alta">Alta Producto</button>
 					</div>
 				</div>
 			</form:form>

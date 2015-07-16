@@ -79,7 +79,7 @@
 				</div>
 			
 				 <div class="col-sm-2">
-					<a href="irIndex" class="link"><input type="button" class="btn btn-primary" value="Volver al Inicio" id="boton1"></a>
+					<a href="salirCarrito" class="link"><input type="button" class="btn btn-primary" value="Volver al Inicio" id="boton1"></a>
 				</div>
 			</div>
 		</div>

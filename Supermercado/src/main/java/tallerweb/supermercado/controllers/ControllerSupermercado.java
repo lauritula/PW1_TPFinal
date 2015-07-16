@@ -1,5 +1,6 @@
 package tallerweb.supermercado.controllers;
 
+import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -148,18 +149,27 @@ public class ControllerSupermercado {
 	}
 	
 	@ModelAttribute("subtotal")
-	public  Double returnSubtotal(){
-		return carrito.totalSinDescuentos();
+	public  String returnSubtotal(){
+		DecimalFormat ahorroDecimales=new DecimalFormat("0.00");
+		Double subtotal=carrito.totalSinDescuentos();
+		String returnSubtotal=ahorroDecimales.format(subtotal);
+		return returnSubtotal;
 	}
 	
 	@ModelAttribute("total")
-	public  Double returnTotal(){
-		return carrito.total();
-	}
+	public  String returnTotal(){
+		DecimalFormat ahorroDecimales=new DecimalFormat("0.00");
+		Double total=carrito.total();
+		String returnTotal=ahorroDecimales.format(total);
+		return returnTotal;
+			}
 	
 	@ModelAttribute("ahorro")
-	public  Double returnAhorro(){
-		return carrito.totalAhorros();
+	public  String returnAhorro(){
+		DecimalFormat ahorroDecimales=new DecimalFormat("0.00");
+		Double ahorro=carrito.totalAhorros();
+		String returnAhorro=ahorroDecimales.format(ahorro);
+		return returnAhorro;
 	}
 	
 	@RequestMapping("vaciarCarrito")
@@ -177,6 +187,10 @@ public class ControllerSupermercado {
 		return new ModelAndView("compraSubmit");
 	}
 	
-
+	@RequestMapping("salirCarrito")
+	public ModelAndView salirCarrito() {
+		carrito.vaciar();
+		return new ModelAndView("inicio");
+	}
 	
 }

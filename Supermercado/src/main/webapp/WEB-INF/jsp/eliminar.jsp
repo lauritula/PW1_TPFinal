@@ -63,8 +63,8 @@
 					<div class="form-group">
 						<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>
 							<div class="col-sm-4">
-								<select class="form-control" name="nombre" id="nombre">
-									<option>- Seleccione Producto -</option>
+								<select required class="form-control" name="nombre" id="nombre">
+									<option value="">- Seleccione Producto -</option>
 										<c:forEach items="${productList}" var="productL">
 											<option value="${productL.nombre}">${productL.nombre}</option>
 										</c:forEach>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="form-group " align="center">
 						<div class="col-sm-offset-1 col-sm-10">
-							<button type="submit" class="btn btn-info" value="Eliminar Stock">Eliminar Stock</button>
+							<button type="submit" class="btn btn-danger" value="Eliminar Stock">Eliminar Stock</button>
 						</div>
 					</div>
 				</form:form>

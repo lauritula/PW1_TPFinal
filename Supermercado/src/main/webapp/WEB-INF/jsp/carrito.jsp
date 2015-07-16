@@ -62,8 +62,8 @@
 				 <div class="form-group"> 
 	 				<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
 				 			<div class="col-sm-4">  
-				 				<select class="form-control" name="nombre" id="nombre">  
-				 					<option>- Seleccione Producto -</option>  
+				 				<select required class="form-control" name="nombre" id="nombre">  
+				 					<option value="">- Seleccione Producto -</option>  
 				 						<c:forEach items="${productList}" var="productL"> 
 				 							<option value="${productL.nombre}">${productL.nombre}</option>  
 			  							</c:forEach>  
@@ -82,8 +82,8 @@
 				<div class="form-group">
 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo Descuento</label>
 						<div class="col-sm-4">
-							<select class="form-control" name="tipo" id="tipo">
-								<option>- Seleccione tipo -</option>
+							<select required class="form-control" name="tipo" id="tipo">
+							<option value="">- Seleccione Producto -</option>  
 								<option value="Monto">Monto</option>
 								<option value="Porcentaje">Porcentaje</option>
 							</select> 

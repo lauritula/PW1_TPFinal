@@ -222,8 +222,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t <div class=\"form-group\"> \r\n");
           out.write("\t \t\t\t\t<label name=\"nombre\" for=\"nombre\" class=\"col-sm-4 control-label\">Producto</label>  \r\n");
           out.write("\t\t\t\t \t\t\t<div class=\"col-sm-4\">  \r\n");
-          out.write("\t\t\t\t \t\t\t\t<select class=\"form-control\" name=\"nombre\" id=\"nombre\">  \r\n");
-          out.write("\t\t\t\t \t\t\t\t\t<option>- Seleccione Producto -</option>  \r\n");
+          out.write("\t\t\t\t \t\t\t\t<select required class=\"form-control\" name=\"nombre\" id=\"nombre\">  \r\n");
+          out.write("\t\t\t\t \t\t\t\t\t<option value=\"\">- Seleccione Producto -</option>  \r\n");
           out.write("\t\t\t\t \t\t\t\t\t\t");
           if (_jspx_meth_c_005fforEach_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
@@ -329,8 +329,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t<div class=\"form-group\">\r\n");
           out.write("\t\t\t\t\t<label name=\"nombre\" for=\"nombre\" class=\"col-sm-4 control-label\">Tipo Descuento</label>\r\n");
           out.write("\t\t\t\t\t\t<div class=\"col-sm-4\">\r\n");
-          out.write("\t\t\t\t\t\t\t<select class=\"form-control\" name=\"tipo\" id=\"tipo\">\r\n");
-          out.write("\t\t\t\t\t\t\t\t<option>- Seleccione tipo -</option>\r\n");
+          out.write("\t\t\t\t\t\t\t<select required class=\"form-control\" name=\"tipo\" id=\"tipo\">\r\n");
+          out.write("\t\t\t\t\t\t\t<option value=\"\">- Seleccione Producto -</option>  \r\n");
           out.write("\t\t\t\t\t\t\t\t<option value=\"Monto\">Monto</option>\r\n");
           out.write("\t\t\t\t\t\t\t\t<option value=\"Porcentaje\">Porcentaje</option>\r\n");
           out.write("\t\t\t\t\t\t\t</select> \r\n");

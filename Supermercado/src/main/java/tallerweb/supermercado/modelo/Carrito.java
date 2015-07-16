@@ -65,10 +65,8 @@ public class Carrito {
 	
 	public Double totalSinDescuentos() {
 		double precioTotal = 0.0;
-		Iterator<Producto> iteratorPrecioTotal = productos.iterator();
-		while (iteratorPrecioTotal.hasNext()) {
-			Producto producto = iteratorPrecioTotal.next();
-			precioTotal = precioTotal + producto.getPrecio();
+		for(Producto producto : productos){
+			precioTotal+=producto.getPrecio();
 		}
 		return precioTotal;
 	}
@@ -82,20 +80,22 @@ public class Carrito {
 
 	double porcentajeAcumulado, montoAcumulado, precioConDescuentos;
 	public Double total() {
-		double totalSinDescuentos = totalSinDescuentos();
-		Iterator<Descuento> iteratorDescuentos = this.descuentos.iterator();
-		while (iteratorDescuentos.hasNext()) {
-			Descuento descuento = iteratorDescuentos.next();
-			double getMonto = descuento.getMonto();
-			this.montoAcumulado = this.montoAcumulado + getMonto;
-			double getPorcentaje = descuento.getPorcentaje();
-			this.porcentajeAcumulado = this.porcentajeAcumulado + getPorcentaje;
+		
+		Double totalSinDescuento = totalSinDescuentos();
+		Double total=0.0;
+		Double monto = 0.0;
+		Double porcentaje=0.0;
+		for(Descuento descuento : descuentos){
+			monto += descuento.getMonto();
+			porcentaje += descuento.getPorcentaje();
 		}
-		this.precioConDescuentos = totalSinDescuentos - this.montoAcumulado; 
-		if (this.porcentajeAcumulado > 0.0) {
-			this.precioConDescuentos = this.precioConDescuentos * (1 - (this.porcentajeAcumulado / 100));
-		}// aplica el descuento de porcentaje
-		return this.precioConDescuentos;
+		if(porcentaje>0.0){
+			total=(totalSinDescuento-monto)*(1-(porcentaje/100));
+		}
+		else{
+			total=totalSinDescuento-monto;
+		}
+		return total;
 	}
 
 	/**
@@ -104,10 +104,11 @@ public class Carrito {
 	 * @return
 	 */
 	
-	public double totalAhorros() {
-		double dineroAhorrado = 0.0;
+	public Double totalAhorros() {
 		double precioSinDescuento = totalSinDescuentos();
 		double precioConDescuento = total();
-		return dineroAhorrado = precioSinDescuento - precioConDescuento;
+		return precioSinDescuento - precioConDescuento;
+		
+		}
+	
 	}
-}

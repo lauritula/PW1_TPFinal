@@ -139,7 +139,7 @@ public final class compraSubmit_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t\r\n");
       out.write("\t\t\t\t <div class=\"col-sm-2\">\r\n");
-      out.write("\t\t\t\t\t<a href=\"irIndex\" class=\"link\"><input type=\"button\" class=\"btn btn-primary\" value=\"Volver al Inicio\" id=\"boton1\"></a>\r\n");
+      out.write("\t\t\t\t\t<a href=\"salirCarrito\" class=\"link\"><input type=\"button\" class=\"btn btn-primary\" value=\"Volver al Inicio\" id=\"boton1\"></a>\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>\r\n");
