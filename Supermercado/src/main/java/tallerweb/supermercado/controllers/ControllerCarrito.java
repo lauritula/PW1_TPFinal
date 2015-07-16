@@ -17,31 +17,37 @@ import tallerweb.supermercado.modelo.Stock;
 
 @Controller
 public class ControllerCarrito {
-	private Carrito carrito = Carrito.getInstance();
-	private Stock stockSupermercado = Stock.getInstance();
+//	private Carrito carrito = Carrito.getInstance();
+//	private Stock stockSupermercado = Stock.getInstance();
 
-//	 @RequestMapping(value = "agregarProductoAlCarrito", method =RequestMethod.POST)
-//	 public String agregarStock(@RequestParam("nombre") String nombre) {
+//	 @RequestMapping(value = "agregarProductoAlCarrito", method = RequestMethod.POST)
+//	 public String agregarACarrito(@RequestParam("nombre") String nombre) {
 //	 Producto productoAAgregar = new Producto();
-//	 productoAAgregar.setNombre(nombre);
+//	 Integer cantidad=1;
+//	 Set<Producto> productos = stockSupermercado.listarProductosDisponibles();
+//	 for(Producto producto: productos){
+//	 if(producto.getNombre().equals(nombre)){
+//	 productoAAgregar = producto;
+//	 	}
+//	 }
 //	 carrito.agregarProducto(productoAAgregar);
-//	 stockSupermercado.comprarProducto(productoAAgregar, 1);
+//	 stockSupermercado.comprarProducto(productoAAgregar,cantidad);
 //	 return "redirect:verCarrito";
 //	 }
-	
-	
-	@RequestMapping(value = "agregarDescuentoAlCarrito")
-	public String agregarDescuento(@RequestParam("tipo") String tipo,
-			@RequestParam("valor") Double valor) {
-		Descuento descuentoAAgregar = new Descuento();
-		if (tipo == "Monto") {
-			descuentoAAgregar.setMonto(valor);
-		}
-		if (tipo == "Porcentaje") {
-			descuentoAAgregar.setPorcentaje(valor);
-		}
-		carrito.aplicarDescuento(descuentoAAgregar);
-		return "redirect:verCarrito";
-	}
+//	
+//	
+//	@RequestMapping(value = "agregarDescuentoAlCarrito")
+//	public String agregarDescuento(@RequestParam("tipo") String tipo,
+//			@RequestParam("valor") Double valor) {
+//		Descuento descuentoAAgregar = new Descuento();
+//		if (tipo == "Monto") {
+//			descuentoAAgregar.setMonto(valor);
+//		}
+//		if (tipo == "Porcentaje") {
+//			descuentoAAgregar.setPorcentaje(valor);
+//		}
+//		carrito.aplicarDescuento(descuentoAAgregar);
+//		return "redirect:verCarrito";
+//	}
 	
 }

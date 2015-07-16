@@ -54,7 +54,7 @@
 		<div class="col-md-12" style="height: 300px">
 			<div class="col-md-6">
 							<div class="col-md-6"> 
-						<				<form:form modelAttribute="producto" 
+										<form:form modelAttribute="producto" 
 				 			method="POST" class="form-horizontal"> 
 				 				<div class="form-group"> 
 	 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
@@ -99,25 +99,22 @@
 				</div>
 			</div>
 			<div class="col-md-12">
-<!-- 				<div class="table table-condensed"> -->
-<!-- 				<table class="table"> -->
-<!-- 					<tr> -->
-<!-- 						<td align=center class="success" width="20%"><strong> -->
-<!-- 								Cantidad </strong></td> -->
-<!-- 						<td align=center class="success" width="20%"><strong> -->
-<!-- 								Producto </strong></td> -->
-<!-- 						<td align=center class="success" width="20%"><strong> -->
-<!-- 								Precio </strong></td> -->
-<!-- 					</tr> -->
-<%-- 					<c:forEach items="${carritoTicket}" var="ticket"> --%>
-<!-- 						<tr> -->
-<!-- 							<td align=center class="active">1</td> -->
-<%-- 							<td align=center class="active">${ticket.nombre}</td> --%>
-<%-- 							<td align=center class="active">${ticket.precio}</td> --%>
-<!-- 						</tr> -->
-<%-- 					</c:forEach> --%>
-<!-- 				</table> -->
-<!-- 			</div> -->
+				<div class="table table-condensed">
+				<table class="table">
+					<tr>
+						<td align=center class="success" width="20%"><strong>
+								Producto </strong></td>
+						<td align=center class="success" width="20%"><strong>
+								Precio </strong></td>
+					</tr>
+					<c:forEach items="${carritoTicket}" var="ticket">
+						<tr>
+							<td align=center class="active">${ticket.nombre}</td>
+							<td align=center class="active">${ticket.precio}</td>
+						</tr>
+					</c:forEach>
+				</table>
+			</div>
 			</div>
 		</div>
 		<div class="col-md-12" style="height: 120px">

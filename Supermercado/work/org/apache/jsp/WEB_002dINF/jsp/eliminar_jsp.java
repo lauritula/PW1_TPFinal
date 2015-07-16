@@ -187,7 +187,7 @@ public final class eliminar_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t<div class=\"form-group \" align=\"center\">\r\n");
           out.write("\t\t\t\t\t<div class=\"col-sm-offset-1 col-sm-10\">\r\n");
-          out.write("\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-info\" value=\"Eliminar Stock\"\">Eliminar\r\n");
+          out.write("\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-info\" value=\"Eliminar Stock\">Eliminar\r\n");
           out.write("\t\t\t\t\t\t\tStock</button>\r\n");
           out.write("\t\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t</div>\r\n");

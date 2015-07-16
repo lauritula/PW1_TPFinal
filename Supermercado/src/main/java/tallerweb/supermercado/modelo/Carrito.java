@@ -4,8 +4,10 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Carrito {
 
+
+public class Carrito {
+	private Stock stockSupermercado = Stock.getInstance();
 	private static Carrito instance = new Carrito();
 	private List<Producto> productos = new LinkedList<Producto>();
 	private List<Descuento> descuentos = new LinkedList<Descuento>();
@@ -18,7 +20,8 @@ public class Carrito {
 	 * Elimina todos los productos del carrito.<br>
 	 */
 	public void vaciar() {
-		this.productos.removeAll(productos);
+		this.productos.clear();
+		this.descuentos.clear();
 
 	}
 
