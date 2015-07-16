@@ -11,7 +11,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction;
 
@@ -23,7 +23,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
@@ -31,7 +31,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
     _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fclass_005faction.release();
   }
@@ -113,22 +113,22 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\taria-hidden=\"true\"></span></small>\r\n");
       out.write("\t\t\t</h1>\r\n");
       out.write("\t\t</div>\r\n");
-      out.write("\t\t<div class=\"col-md-12\" style=\"height: 300px\">\r\n");
-      out.write("\t\t\t<div class=\"col-md-6\">\r\n");
-      out.write("\t\t\t\t\t\t\t<div class=\"col-md-6\"> \r\n");
+      out.write("\t\t<div class=\"col-md-12\" style=\"height: 100px\">\r\n");
+      out.write("<!-- \t\t\t<div class=\"col-md-6\"> -->\r\n");
+      out.write("<!-- \t\t\t\t\t\t\t<div class=\"col-md-6\">  -->\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t");
       if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
         return;
       out.write("  \r\n");
-      out.write("\t\t\t\t \t\t\t</div> \r\n");
-      out.write("\t\t\t\t<div class=\"col-md-6\">\r\n");
+      out.write("\t\t\t\t </div> \r\n");
+      out.write("\t\t\t\t<div class=\"col-md-12\" style=\"height:150px\">\r\n");
       out.write("\t\t\t\t\t");
       if (_jspx_meth_form_005fform_005f1(_jspx_page_context))
         return;
       out.write("\r\n");
       out.write("\t\t\t\t</div>\r\n");
-      out.write("\t\t\t</div>\r\n");
-      out.write("\t\t\t<div class=\"col-md-12\">\r\n");
+      out.write("\t\t\t\r\n");
+      out.write("\t\t\t<div class=\"col-md-12\" style=\"height:400px\">\r\n");
       out.write("\t\t\t\t<div class=\"table table-condensed\">\r\n");
       out.write("\t\t\t\t<table class=\"table\">\r\n");
       out.write("\t\t\t\t\t<tr>\r\n");
@@ -143,24 +143,27 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\t\t\t\t</table>\r\n");
       out.write("\t\t\t</div>\r\n");
-      out.write("\t\t\t<div>\r\n");
+      out.write("\t\t\t<div class=\"col-md-12\" style=\"height:200px\">\r\n");
+      out.write("\t\t\t<div class=\"col-sm-2\">\r\n");
       out.write("\t\t\tSubtotal: ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${subtotal}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("\r\n");
+      out.write("</div>\r\n");
+      out.write("\t\t\t<div class=\"col-sm-2\">\r\n");
       out.write("\t\t\tAhorro: ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ahorro}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("\r\n");
+      out.write("</div>\r\n");
+      out.write("\t\t\t<div class=\"col-sm-2\">\r\n");
       out.write("\t\t\tTotal: ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${total}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("\r\n");
+      out.write("</div>\r\n");
+      out.write("\t\t\t\r\n");
+      out.write("               <div class=\"col-sm-2\">\r\n");
+      out.write("\t\t\t\t<a href=\"compraSubmitcompraSubmit\" class=\"link\"><input type=\"button\" value=\"Confirmar Compra\" id=\"boton1\"></a></div>\r\n");
+      out.write("\t\t\t\t<div class=\"col-sm-2\"><a href=\"vaciarCarrito\" class=\"link\"><input type=\"button\" value=\"Cancelar\" id=\"boton2\"></a>\r\n");
       out.write("\t\t\t</div>\r\n");
-      out.write("\t\t\t<div>\r\n");
-      out.write("\t\t\t\t<a href=\"compraSubmitcompraSubmit\" class=\"link\"><input type=\"button\" value=\"Confirmar Compra\" id=\"boton1\"></a>\r\n");
-      out.write("\t\t\t\t<a href=\"vaciarCarrito\" class=\"link\"><input type=\"button\" value=\"Cancelar\" id=\"boton2\"></a>\r\n");
       out.write("\t\t\t</div>\r\n");
-      out.write("\t\t\t</div>\r\n");
-      out.write("\t\t</div>\r\n");
-      out.write("\t\t<div class=\"col-md-12\" style=\"height: 120px\">\r\n");
+      out.write("\t\t\t\r\n");
+      out.write("\t\t\t\t<div class=\"col-md-12\" style=\"height: 100px\">\r\n");
       out.write("\t\t\t<div class=\"text-info\" align=\"center\">Universidad Nacional de\r\n");
       out.write("\t\t\t\tLa Matanza</div>\r\n");
       out.write("\t\t\t<div class=\"text-info\" align=\"center\">Tecnicatura en Desarrollo\r\n");
@@ -170,8 +173,11 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t<div class=\"text-info\" align=\"center\">RABUÑAL, JULIANA LAURA -\r\n");
       out.write("\t\t\t\tTULA ACOSTA, MARIA LAURA</div>\r\n");
       out.write("\t\t</div>\r\n");
-      out.write("\r\n");
-      out.write("\t</div>");
+      out.write("\t\t</div>\r\n");
+      out.write("\t\t\r\n");
+      out.write("\t</div>\r\n");
+      out.write("\t\t\r\n");
+      out.write("\t\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -190,7 +196,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
     // /WEB-INF/jsp/carrito.jsp(57,10) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
@@ -199,6 +205,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_form_005fform_005f0.setMethod("POST");
     // /WEB-INF/jsp/carrito.jsp(57,10) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("form-horizontal"));
+    // /WEB-INF/jsp/carrito.jsp(57,10) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setAction("agregarProductoAlCarrito");
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
@@ -237,7 +245,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }
@@ -314,8 +322,11 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t\t\t\t\t\t<option>- Seleccione tipo -</option>\r\n");
           out.write("\t\t\t\t\t\t\t\t\t<option value=\"Monto\">Monto</option>\r\n");
           out.write("\t\t\t\t\t\t\t\t\t<option value=\"Porcentaje\">Porcentaje</option>\r\n");
-          out.write("\t\t\t\t\t\t\t\t</select> <label name=\"valor\" for=\"valor\" class=\"col-sm-4 control-label\">Valor</label>\r\n");
-          out.write("\t\t\t\t\t\t\t\t<input type=\"text\" name=\"valor\" id=\"valor\" />\r\n");
+          out.write("\t\t\t\t\t\t\t\t</select> \r\n");
+          out.write("\t\t\t\t\t\t\t    <div class=\"col-md-12\">\r\n");
+          out.write("\t\t\t\t\t\t\t    <label name=\"valor\" for=\"valor\" class=\"col-sm-4 control-label\">Valor</label>\r\n");
+          out.write("\t\t\t\t\t\t\t\t<input type=\"text\" name=\"valor\" id=\"valor\" class=\"col-sm-4\" />\r\n");
+          out.write("\t\t\t\t\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t\t\t</div>\r\n");
           out.write("\t\t\t\t\t\t<div class=\"form-group \" align=\"center\">\r\n");
@@ -352,9 +363,9 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f1.setParent(null);
-    // /WEB-INF/jsp/carrito.jsp(110,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/carrito.jsp(110,5) '${carritoTicket}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${carritoTicket}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/carrito.jsp(110,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(113,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/carrito.jsp(113,5) '${carritoTicket}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${carritoTicket}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/carrito.jsp(113,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("ticket");
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {

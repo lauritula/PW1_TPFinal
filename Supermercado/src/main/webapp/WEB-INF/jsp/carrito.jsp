@@ -51,11 +51,11 @@
 					aria-hidden="true"></span></small>
 			</h1>
 		</div>
-		<div class="col-md-12" style="height: 300px">
-			<div class="col-md-6">
-							<div class="col-md-6"> 
+		<div class="col-md-12" style="height: 100px">
+<!-- 			<div class="col-md-6"> -->
+<!-- 							<div class="col-md-6">  -->
 										<form:form modelAttribute="producto" 
-				 			method="POST" class="form-horizontal"> 
+				 			method="POST" class="form-horizontal" action="agregarProductoAlCarrito"> 
 				 				<div class="form-group"> 
 	 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
 				 				<div class="col-sm-4">  
@@ -73,8 +73,8 @@
 										Producto</button>  
 								</div>  
 							</div> 			</form:form>  
-				 			</div> 
-				<div class="col-md-6">
+				 </div> 
+				<div class="col-md-12" style="height:150px">
 					<form:form action="agregarDescuentoAlCarrito" method="POST"
 						class="form-horizontal">
 						<div class="form-group">
@@ -85,8 +85,11 @@
 									<option>- Seleccione tipo -</option>
 									<option value="Monto">Monto</option>
 									<option value="Porcentaje">Porcentaje</option>
-								</select> <label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
-								<input type="text" name="valor" id="valor" />
+								</select> 
+							    <div class="col-md-12">
+							    <label name="valor" for="valor" class="col-sm-4 control-label">Valor</label>
+								<input type="text" name="valor" id="valor" class="col-sm-4" />
+								</div>
 							</div>
 						</div>
 						<div class="form-group " align="center">
@@ -97,8 +100,8 @@
 						</div>
 					</form:form>
 				</div>
-			</div>
-			<div class="col-md-12">
+			
+			<div class="col-md-12" style="height:400px">
 				<div class="table table-condensed">
 				<table class="table">
 					<tr>
@@ -115,18 +118,21 @@
 					</c:forEach>
 				</table>
 			</div>
-			<div>
-			Subtotal: ${subtotal}
-			Ahorro: ${ahorro}
-			Total: ${total}
+			<div class="col-md-12" style="height:200px">
+			<div class="col-sm-2">
+			Subtotal: ${subtotal}</div>
+			<div class="col-sm-2">
+			Ahorro: ${ahorro}</div>
+			<div class="col-sm-2">
+			Total: ${total}</div>
+			
+               <div class="col-sm-2">
+				<a href="compraSubmitcompraSubmit" class="link"><input type="button" value="Confirmar Compra" id="boton1"></a></div>
+				<div class="col-sm-2"><a href="vaciarCarrito" class="link"><input type="button" value="Cancelar" id="boton2"></a>
 			</div>
-			<div>
-				<a href="compraSubmitcompraSubmit" class="link"><input type="button" value="Confirmar Compra" id="boton1"></a>
-				<a href="vaciarCarrito" class="link"><input type="button" value="Cancelar" id="boton2"></a>
 			</div>
-			</div>
-		</div>
-		<div class="col-md-12" style="height: 120px">
+			
+				<div class="col-md-12" style="height: 100px">
 			<div class="text-info" align="center">Universidad Nacional de
 				La Matanza</div>
 			<div class="text-info" align="center">Tecnicatura en Desarrollo
@@ -136,5 +142,8 @@
 			<div class="text-info" align="center">RABUÑAL, JULIANA LAURA -
 				TULA ACOSTA, MARIA LAURA</div>
 		</div>
-
+		</div>
+		
 	</div>
+		
+	

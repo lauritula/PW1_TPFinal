@@ -168,8 +168,12 @@ public class ControllerSupermercado {
 		carrito.vaciar();
 		return "redirect:verCarrito";
 	}
-	
-	@RequestMapping("compraSubmit")
+
+	@RequestMapping(value = "carrito", method = RequestMethod.POST)
+	public ModelAndView verCarritoCompra() {
+		return new ModelAndView("compraSubmit");
+	}
+	@RequestMapping("/compraSubmit")
 	public ModelAndView ticketCompra(){
 		return new ModelAndView("compraSubmit");
 	}
