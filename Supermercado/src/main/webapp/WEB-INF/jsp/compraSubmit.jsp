@@ -51,7 +51,7 @@
 					aria-hidden="true"></span></small>
 			</h1>
 		</div>
-		<div class="col-md-12" style="height: 300px">
+		<div class="col-md-12" style="height:200px">
 			<div class="col-md-12">
 				<div class="table table-condensed">
 				<table class="table">
@@ -69,17 +69,21 @@
 					</c:forEach>
 				</table>
 			</div>
-			<div>
-			Subtotal: ${subtotal}
-			Ahorro: ${ahorro}
-			Total: ${total}
-			</div>
-			<div>
+			<div class="col-md-12" style="height:200px">
+			<div class="col-sm-2">
+			Subtotal: ${subtotal}</div>
+			<div class="col-sm-2">
+			Ahorro: ${ahorro}</div>
+			<div class="col-sm-2">
+			Total: ${total}</div>
+			
+			 <div class="col-sm-2">
 				<a href="irIndex" class="link"><input type="button" value="Volver al Inicio" id="boton1"></a>
 			</div>
 			</div>
+			</div>
 		</div>
-		<div class="col-md-12" style="height: 120px">
+		<div class="col-md-12" style="height: 150px">
 			<div class="text-info" align="center">Universidad Nacional de
 				La Matanza</div>
 			<div class="text-info" align="center">Tecnicatura en Desarrollo

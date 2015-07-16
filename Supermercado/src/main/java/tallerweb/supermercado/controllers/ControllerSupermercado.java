@@ -170,13 +170,15 @@ public class ControllerSupermercado {
 		return "redirect:verCarrito";
 	}
 
-	@RequestMapping(value = "carrito", method = RequestMethod.POST)
-	public ModelAndView verCarritoCompra() {
+	@RequestMapping(value = "confirmacion", method = RequestMethod.POST)
+	public ModelAndView compraSubmit() {
 		return new ModelAndView("compraSubmit");
 	}
 	@RequestMapping("/compraSubmit")
 	public ModelAndView ticketCompra(){
 		return new ModelAndView("compraSubmit");
 	}
+	
+
 	
 }
