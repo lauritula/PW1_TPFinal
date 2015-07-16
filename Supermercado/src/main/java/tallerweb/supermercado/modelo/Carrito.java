@@ -4,14 +4,11 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-
-
 public class Carrito {
-	private Stock stockSupermercado = Stock.getInstance();
 	private static Carrito instance = new Carrito();
 	private List<Producto> productos = new LinkedList<Producto>();
 	private List<Descuento> descuentos = new LinkedList<Descuento>();
-
+	
 	public static Carrito getInstance() {
 		return instance;
 	}
@@ -19,10 +16,10 @@ public class Carrito {
 	/**
 	 * Elimina todos los productos del carrito.<br>
 	 */
+	
 	public void vaciar() {
-		this.productos.clear();
 		this.descuentos.clear();
-
+		this.productos.clear();
 	}
 
 	/**
@@ -30,6 +27,7 @@ public class Carrito {
 	 * 
 	 * @param ingrediente
 	 */
+	
 	public void agregarProducto(Producto producto) {
 		this.productos.add(producto);
 
@@ -40,6 +38,7 @@ public class Carrito {
 	 * 
 	 * @param descuento
 	 */
+	
 	public void aplicarDescuento(Descuento descuento) {
 		this.descuentos.add(descuento);
 	}
@@ -49,6 +48,7 @@ public class Carrito {
 	 * 
 	 * @return
 	 */
+	
 	public List<Producto> verProductos() {
 		Iterator<Producto> iteratorProductos = productos.iterator();
 		while (iteratorProductos.hasNext()) {
@@ -62,6 +62,7 @@ public class Carrito {
 	 * 
 	 * @return
 	 */
+	
 	public Double totalSinDescuentos() {
 		double precioTotal = 0.0;
 		Iterator<Producto> iteratorPrecioTotal = productos.iterator();
@@ -80,7 +81,6 @@ public class Carrito {
 	 */
 
 	double porcentajeAcumulado, montoAcumulado, precioConDescuentos;
-
 	public Double total() {
 		double totalSinDescuentos = totalSinDescuentos();
 		Iterator<Descuento> iteratorDescuentos = this.descuentos.iterator();
@@ -91,14 +91,9 @@ public class Carrito {
 			double getPorcentaje = descuento.getPorcentaje();
 			this.porcentajeAcumulado = this.porcentajeAcumulado + getPorcentaje;
 		}
-		this.precioConDescuentos = totalSinDescuentos - this.montoAcumulado; // aplica
-																				// el
-																				// descuento
-																				// de
-																				// monto
+		this.precioConDescuentos = totalSinDescuentos - this.montoAcumulado; 
 		if (this.porcentajeAcumulado > 0.0) {
-			this.precioConDescuentos = this.precioConDescuentos
-					* (1 - (this.porcentajeAcumulado / 100));
+			this.precioConDescuentos = this.precioConDescuentos * (1 - (this.porcentajeAcumulado / 100));
 		}// aplica el descuento de porcentaje
 		return this.precioConDescuentos;
 	}
@@ -108,6 +103,7 @@ public class Carrito {
 	 * 
 	 * @return
 	 */
+	
 	public double totalAhorros() {
 		double dineroAhorrado = 0.0;
 		double precioSinDescuento = totalSinDescuentos();

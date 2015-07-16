@@ -55,11 +55,9 @@ public class ControllerSupermercado {
 	@RequestMapping(value = "/altaSubmit", method = RequestMethod.POST)
 	public ModelAndView agregar(@RequestParam("nombre") String nombre,
 			@RequestParam("precio") Double precio, ModelMap model) {
-
 		Producto producto = new Producto();
 		producto.setNombre(nombre);
 		producto.setPrecio(precio);
-
 		stockSupermercado.agregarProducto(producto);
 		return new ModelAndView("altaSubmit");
 	}
