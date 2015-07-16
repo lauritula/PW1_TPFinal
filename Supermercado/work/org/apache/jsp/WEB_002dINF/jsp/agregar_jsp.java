@@ -73,7 +73,7 @@ public final class agregar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\tsrc=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n");
       out.write("<script\r\n");
       out.write("\tsrc=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>\r\n");
-      out.write("<title>Inicio</title>\r\n");
+      out.write("<title>Agregar Stock</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\t<div class=\"container\" style=\"background-color: lavender\">\r\n");

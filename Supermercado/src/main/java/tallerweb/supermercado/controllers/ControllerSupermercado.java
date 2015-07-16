@@ -174,7 +174,7 @@ public class ControllerSupermercado {
 	public ModelAndView compraSubmit() {
 		return new ModelAndView("compraSubmit");
 	}
-	@RequestMapping("/compraSubmit")
+	@RequestMapping("compraSubmit")
 	public ModelAndView ticketCompra(){
 		return new ModelAndView("compraSubmit");
 	}
