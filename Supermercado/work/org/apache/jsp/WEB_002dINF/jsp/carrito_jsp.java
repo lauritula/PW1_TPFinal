@@ -11,9 +11,9 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fdata_002dtoggle_005fclass_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
@@ -23,17 +23,17 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fdata_002dtoggle_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
-    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fdata_002dtoggle_005fclass_005faction.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -64,6 +64,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
@@ -71,8 +73,8 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<meta charset=\"utf-8\">\r\n");
       out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
       out.write("\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css\">\r\n");
-      out.write("\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n");
-      out.write("\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>\r\n");
+      out.write("\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>\t\r\n");
+      out.write("\t<script type=\"text/javascript\" src=\"/js/jquery-1.4.3.min.js\"></script> \r\n");
       out.write("\t<title>Carrito</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
@@ -193,20 +195,22 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/carrito.jsp(59,3) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(61,3) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setId("myForm");
+    // /WEB-INF/jsp/carrito.jsp(61,3) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setModelAttribute("producto");
-    // /WEB-INF/jsp/carrito.jsp(59,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(61,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setMethod("POST");
-    // /WEB-INF/jsp/carrito.jsp(59,3) null
+    // /WEB-INF/jsp/carrito.jsp(61,3) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("form-horizontal"));
-    // /WEB-INF/jsp/carrito.jsp(59,3) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(61,3) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction("agregarProductoAlCarrito");
-    // /WEB-INF/jsp/carrito.jsp(59,3) null
+    // /WEB-INF/jsp/carrito.jsp(61,3) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "data-toggle", new String("validator"));
-    // /WEB-INF/jsp/carrito.jsp(59,3) null
+    // /WEB-INF/jsp/carrito.jsp(61,3) null
     _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "role", new String("form"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
@@ -217,7 +221,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\t\t\t\t <div class=\"form-group\"> \r\n");
           out.write("\t \t\t\t\t<label name=\"nombre\" for=\"nombre\" class=\"col-sm-4 control-label\">Producto</label>  \r\n");
           out.write("\t\t\t\t \t\t\t<div class=\"col-sm-4\">  \r\n");
-          out.write("\t\t\t\t \t\t\t\t<select class=\"form-control\" name=\"nombre\" id=\"nombre\" required>  \r\n");
+          out.write("\t\t\t\t \t\t\t\t<select class=\"form-control\" name=\"nombre\" id=\"nombre\" class=\"required\">  \r\n");
           out.write("\t\t\t\t \t\t\t\t\t<option>- Seleccione Producto -</option>  \r\n");
           out.write("\t\t\t\t \t\t\t\t\t\t");
           if (_jspx_meth_c_005fforEach_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
@@ -246,7 +250,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fdata_002dtoggle_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmodelAttribute_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }
@@ -259,9 +263,9 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/carrito.jsp(65,11) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/carrito.jsp(65,11) '${productList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/carrito.jsp(65,11) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(67,11) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/carrito.jsp(67,11) '${productList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${productList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/carrito.jsp(67,11) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("productL");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -300,18 +304,20 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f1 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fdata_002dtoggle_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f1 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f1.setParent(null);
-    // /WEB-INF/jsp/carrito.jsp(79,3) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(81,3) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f1.setId("myForm");
+    // /WEB-INF/jsp/carrito.jsp(81,3) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f1.setAction("agregarDescuentoAlCarrito");
-    // /WEB-INF/jsp/carrito.jsp(79,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(81,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f1.setMethod("POST");
-    // /WEB-INF/jsp/carrito.jsp(79,3) null
+    // /WEB-INF/jsp/carrito.jsp(81,3) null
     _jspx_th_form_005fform_005f1.setDynamicAttribute(null, "class", new String("form-horizontal"));
-    // /WEB-INF/jsp/carrito.jsp(79,3) null
+    // /WEB-INF/jsp/carrito.jsp(81,3) null
     _jspx_th_form_005fform_005f1.setDynamicAttribute(null, "data-toggle", new String("validator"));
-    // /WEB-INF/jsp/carrito.jsp(79,3) null
+    // /WEB-INF/jsp/carrito.jsp(81,3) null
     _jspx_th_form_005fform_005f1.setDynamicAttribute(null, "role", new String("form"));
     int[] _jspx_push_body_count_form_005fform_005f1 = new int[] { 0 };
     try {
@@ -353,7 +359,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f1.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f1.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fdata_002dtoggle_005fclass_005faction.reuse(_jspx_th_form_005fform_005f1);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005frole_005fmethod_005fid_005fdata_002dtoggle_005fclass_005faction.reuse(_jspx_th_form_005fform_005f1);
     }
     return false;
   }
@@ -366,9 +372,9 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f1.setParent(null);
-    // /WEB-INF/jsp/carrito.jsp(108,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/carrito.jsp(108,5) '${carritoTicket}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${carritoTicket}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/carrito.jsp(108,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/carrito.jsp(110,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/carrito.jsp(110,5) '${carritoTicket}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${carritoTicket}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/carrito.jsp(110,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("ticket");
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {

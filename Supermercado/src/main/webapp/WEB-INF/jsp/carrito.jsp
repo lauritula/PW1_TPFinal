@@ -2,6 +2,8 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,8 +11,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script> 
 	<title>Carrito</title>
 </head>
 <body>
@@ -56,11 +58,11 @@
 				</h1>
 		</div>
 		<div class="col-md-12" style="height: 100px">
-			<form:form modelAttribute="producto" method="POST" class="form-horizontal" action="agregarProductoAlCarrito" data-toggle="validator" role="form"> 
+			<form:form id="myForm" modelAttribute="producto" method="POST" class="form-horizontal" action="agregarProductoAlCarrito" data-toggle="validator" role="form"> 
 				 <div class="form-group"> 
 	 				<label name="nombre" for="nombre" class="col-sm-4 control-label">Producto</label>  
 				 			<div class="col-sm-4">  
-				 				<select class="form-control" name="nombre" id="nombre" required>  
+				 				<select class="form-control" name="nombre" id="nombre" class="required">  
 				 					<option>- Seleccione Producto -</option>  
 				 						<c:forEach items="${productList}" var="productL"> 
 				 							<option value="${productL.nombre}">${productL.nombre}</option>  
@@ -76,7 +78,7 @@
 			</form:form>  
 		 </div> 
 		<div class="col-md-12" style="height:150px">
-			<form:form action="agregarDescuentoAlCarrito" method="POST" class="form-horizontal" data-toggle="validator" role="form">
+			<form:form id="myForm" action="agregarDescuentoAlCarrito" method="POST" class="form-horizontal" data-toggle="validator" role="form">
 				<div class="form-group">
 					<label name="nombre" for="nombre" class="col-sm-4 control-label">Tipo Descuento</label>
 						<div class="col-sm-4">
