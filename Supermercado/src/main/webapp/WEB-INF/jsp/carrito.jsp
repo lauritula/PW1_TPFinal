@@ -132,7 +132,7 @@
 			</div>
 			</div>
 			
-				<div class="col-md-12" style="height: 100px">
+				<div class="col-md-12" style="height: 300px">
 			<div class="text-info" align="center">Universidad Nacional de
 				La Matanza</div>
 			<div class="text-info" align="center">Tecnicatura en Desarrollo

@@ -163,7 +163,7 @@ public final class carrito_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t\r\n");
-      out.write("\t\t\t\t<div class=\"col-md-12\" style=\"height: 100px\">\r\n");
+      out.write("\t\t\t\t<div class=\"col-md-12\" style=\"height: 300px\">\r\n");
       out.write("\t\t\t<div class=\"text-info\" align=\"center\">Universidad Nacional de\r\n");
       out.write("\t\t\t\tLa Matanza</div>\r\n");
       out.write("\t\t\t<div class=\"text-info\" align=\"center\">Tecnicatura en Desarrollo\r\n");
